@@ -97,27 +97,19 @@ const Navbar: React.FC = () => {
               className="md:hidden z-50 relative w-8 h-8 flex items-center justify-center focus:outline-none"
               aria-label="Toggle menu"
             >
-              <div className="w-6 h-5 relative flex flex-col justify-between">
+              <div className="w-6 h-3 relative flex flex-col justify-between">
                 <motion.span
                   animate={{
                     rotate: isMenuOpen ? 45 : 0,
-                    translateY: isMenuOpen ? 10 : 0,
+                    translateY: isMenuOpen ? 6 : 0,
                   }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="block h-[2px] w-full bg-black origin-center"
                 />
                 <motion.span
                   animate={{
-                    opacity: isMenuOpen ? 0 : 1,
-                    scaleX: isMenuOpen ? 0 : 1,
-                  }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="block h-[2px] w-full bg-black"
-                />
-                <motion.span
-                  animate={{
                     rotate: isMenuOpen ? -45 : 0,
-                    translateY: isMenuOpen ? -10 : 0,
+                    translateY: isMenuOpen ? -6 : 0,
                   }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="block h-[2px] w-full bg-black origin-center"
