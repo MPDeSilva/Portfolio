@@ -1,0 +1,284 @@
+interface ProjectDetails {
+  challenge: string;
+  solution: string;
+  features: string[];
+  images: string[];
+  video?: string; // Optional YouTube URL
+}
+
+export interface PortfolioProject {
+  id: number;
+  slug: string;
+  title: string;
+  category: string;
+  image: string;
+  imageAlt?: string;
+  description: string;
+  technologies: string[];
+  liveLink: string;
+  githubLink: string;
+  details: ProjectDetails;
+}
+
+export const portfolioData: PortfolioProject[] = [
+  {
+    id: 1,
+    slug: 'northern-data',
+    title: 'Northern Data',
+    category: '',
+    image: 'https://media.licdn.com/dms/image/v2/D4E10AQFfSi09Ar6z1w/image-shrink_1280/image-shrink_1280/0/1736355214559?e=1763380800&v=beta&t=NiG_gci3L1FIyeaQCVvP50aMjGJyoJWn1tOCwuC5j3A',
+    imageAlt: "Northern Data's Glass Hermit Campaign Showcase",
+    description: 'Led full rebuild of Northern Data Group’s main business site and web digital campaigns, elevating their digital presence and engagement.',
+    technologies: ['HubSpot', 'HUBL', 'HTML', 'JavaScript', 'TailwindCSS', 'CSS', 'SASS', 'Google Analytics'],
+    liveLink: 'https://northerndata.de/',
+    githubLink: '',
+    details: {
+      video: 'https://www.youtube.com/watch?v=2rxhunVvlBk',
+      challenge: 'Modernizing, optimizing, and scaling a digital presence for advanced data solutions, while supporting rapid campaign launches.',
+      solution: 'Engineered and managed the site, landing pages, and digital web campaign assets (such as AI Accelerator program, Glass Hermit campaign), A/B tested, captured forms, and improved SEO/AIO. Managed analytics with HubSpot and Google.',
+      features: [
+        'Site & rebrand rebuild',
+        'Animated multimedia content',
+        'Campaign and landing pages',
+        'Optimized SEO/AIO scores',
+        'Integrated forms and automation',
+        'Email marketing flows',
+        'A/B testing and analytics',
+        'HubSpot CMS & reporting'
+      ],
+      images: [
+        'https://i0.wp.com/motionographer.com/wp-content/uploads/2024/12/Still_1-scaled.jpg?w=1700&quality=89&ssl=1',
+        '/images/northern-data/nd-5.png',
+        'https://i0.wp.com/motionographer.com/wp-content/uploads/2024/12/still_3_opt_2-scaled.jpg?w=1700&quality=89&ssl=1',
+        '/images/northern-data/nd-4.png',
+       
+
+        '/images/northern-data/nd-2.png',
+  '/images/northern-data/nd-7.png',
+         'https://ascentialcdn.filespin.io/api/v1/conversion/72116f203165451eafe4df2036b6f429',
+                          '/images/northern-data/nd-1.png',
+
+        
+        '/images/northern-data/nd-6.png',
+                '/images/northern-data/nd-3.png',
+      
+        '/images/northern-data/nd-8.png',
+        '/images/northern-data/nd-9.png'
+      ]
+    }
+  },
+  {
+    id: 2,
+    slug: 'ardent-data-centers',
+    title: 'Ardent Data Centers',
+    category: '',
+    image: 'https://ardentdc.com/hs-fs/hubfs/ND_Modular_DC_Stills_04%20(1).jpg?width=3840&height=2160&name=ND_Modular_DC_Stills_04%20(1).jpg',
+    imageAlt: "Ardent Data Centers' Data Server Machines",
+    description: 'Created and managed web platform for Ardent Data Centers, with enhanced CMS, forms, campaigns, and analytics.',
+    technologies: ['HubSpot', 'HUBL', 'HTML', 'JavaScript', 'TailwindCSS', 'CSS', 'SASS', 'Google Analytics'],
+    liveLink: 'https://ardentdc.com/',
+    githubLink: '',
+    details: {
+      video: 'https://youtu.be/_jlv1uR-L_4',
+      challenge: 'Building a scalable, subsidiary-aligned website that supports group identity and effective campaign tracking.',
+      solution: 'Applied digital ecosystem from the parent site, engineered and managed the website, landing pages, and digital campaign content, streamlining form capture, optimizing SEO/AIO, and automating site updates. Integrated HubSpot and Google analytics for tracking and reporting, and continuously A/B tested features to improve engagement across campaigns and services',
+      features: [
+        'Responsive website with contemporary design',
+        'Integration of automated lead capture forms',
+        'SEO and AIO score enhancements',
+        'A/B testing for user engagement',
+        'HubSpot CMS content management and analytics tracking',
+        'Rich multimedia including animations and videos',
+        'Support for marketing campaign landing pages'
+      ],
+      images: [
+        'https://ardentdc.com/hubfs/Data%20Center%20orange%20v2.webp',
+        '/images/ardent-data-centers/adc-1.png',
+        'https://cdn.digitalisationworld.com/uploads/images/b30b9481cce7cc3c4abff43ef558a582f3e07bb221ccf5b4.jpg',
+        '/images/ardent-data-centers/adc-2.png',
+        '/images/ardent-data-centers/adc-3.png',
+        '/images/ardent-data-centers/adc-4.png',
+                'https://ardentdc.com/hs-fs/hubfs/Northern_Data_Pittsburgh_VR_01_shot1.jpg?width=1200&height=677&name=Northern_Data_Pittsburgh_VR_01_shot1.jpg',
+        '/images/ardent-data-centers/adc-5.png',
+
+        '/images/ardent-data-centers/adc-6.png',
+        '/images/ardent-data-centers/adc-7.png',
+      ]
+    }
+  },
+  {
+    id: 3,
+    slug: 'taiga-cloud',
+    title: 'Taiga Cloud',
+    category: '',
+    image: 'https://taigacloud.com/hs-fs/hubfs/knohxville_cinematic_shot_futuristic_team_leader_in_glowing_min_381c279b-259f-4db0-b683-f36ed6ed4126.jpg?width=2912&height=1632&name=knohxville_cinematic_shot_futuristic_team_leader_in_glowing_min_381c279b-259f-4db0-b683-f36ed6ed4126.jpg',
+    imageAlt: "Taiga Cloud's Cinematic Team Leader walking alongside a mountain range",
+    description: 'Delivered site for next-gen cloud computing subsidiary, with campaign and lead capture flows.',
+    technologies: ['HubSpot', 'HUBL', 'HTML', 'JavaScript', 'TailwindCSS', 'CSS', 'SASS', 'Google Analytics'],
+    liveLink: 'https://taigacloud.com/',
+    githubLink: '',
+    details: {
+      video: 'https://youtu.be/Xipeh8oRjlk',
+      challenge: 'Launching a new cloud platform with speed, brand consistency, and technical depth.',
+      solution: 'Built a brand-aligned site, developed and managed Taiga Cloud’s web experience, delivering high-performance site assets with animated content, robust form and lead capture, and ongoing SEO/AIO improvements. Integrated analytics, automated landing pages for cloud campaigns, and implemented technical enhancements to optimize customer journey and conversion tracking',
+      features: [
+        'Brand-consistent, scalable website design',
+        'Automated campaign landing pages',
+        'Lead capture forms with validation',
+        'Search engine optimization and analytics',
+        'Video content and animated visuals',
+        'Technical improvements for fast, smooth UX',
+        'Integration with marketing tools for campaign tracking',
+      ],
+      images: [
+        '/images/taiga-cloud/tc-1.png',
+        '/images/taiga-cloud/tc-2.png',
+        '/images/taiga-cloud/tc-3.png',
+        '/images/taiga-cloud/tc-4.png',
+        '/images/taiga-cloud/tc-5.png',
+        'https://taigacloud.com/hs-fs/hubfs/knohxville_cinematic_shot_futuristic_team_leader_in_glowing_min_381c279b-259f-4db0-b683-f36ed6ed4126.jpg?width=2912&height=1632&name=knohxville_cinematic_shot_futuristic_team_leader_in_glowing_min_381c279b-259f-4db0-b683-f36ed6ed4126.jpg',
+        '/images/taiga-cloud/tc-6.png',
+        '/images/taiga-cloud/tc-7.png',
+      ]
+    }
+  },
+  {
+    id: 4,
+    slug: 'ada-infrastructure',
+    title: 'Ada Infrastructure',
+    category: '',
+    image: 'https://mms-delivery.sitecorecloud.io/api/media/v2/delivery/a38699ce-481f-4313-810e-08db30610e88/1ebcb15345ca437ea95ca73d45ddaa86?transform=true&format=webp&width=3840',
+    imageAlt: "Ada Infrastructure's Data Center Building Exterior",
+    description: 'Managed Ada Infrastructure’s website build and content, focused on scalability, SEO, and analytics.',
+    technologies: ['NextJS', 'Sitecore', 'TailwindCSS', 'JavaScript', 'HTML', 'CSS', 'Analytics'],
+    liveLink: 'https://adainfrastructure.com/en-US',
+    githubLink: '',
+    details: {
+      video: 'https://youtu.be/X9MSpxwrn_Q',
+      challenge: 'Rapidly deliver a feature-rich, robust site ready for frequent content updates and real-time analytics.',
+      solution: 'Implemented a scalable CMS (Sitecore with Next.js), integrated analytics dashboards, and set up robust content controls for agility and governance.',
+      features: [
+        'Fast, scalable site launch with continuous deployment',
+        'Centralized, user-friendly CMS for easy content updates (Sitecore, Next.js)',
+        'SEO performance monitoring and improvement',
+        'Custom analytics dashboards for actionable insights',
+        'Modular content components for flexible page layouts',
+        'Admin tools for governance and access control',
+        'Optimized for accessibility and cross-device compatibility',
+      ],
+      images: [
+        '/images/ada-infrastructure/ada-1.png',
+        '/images/ada-infrastructure/ada-2.png',
+        '/images/ada-infrastructure/ada-3.png',
+        '/images/ada-infrastructure/ada-4.png',
+        'https://mms-delivery.sitecorecloud.io/api/media/v2/delivery/a38699ce-481f-4313-810e-08db30610e88/1ebcb15345ca437ea95ca73d45ddaa86?transform=true&format=webp&width=3840',
+        '/images/ada-infrastructure/ada-5.png',
+        '/images/ada-infrastructure/ada-6.png',
+        '/images/ada-infrastructure/ada-7.png',
+      ]
+    }
+  },
+  {
+    id: 5,
+    slug: 'colt-data-centers',
+    title: 'Colt Data Centres',
+    category: '',
+    image: 'https://www.coltdatacentres.net/-/media/Images/image-text/image-text-frankfurt-3.jpg?w=780&rev=5f6cef6eaa0a409b826de7a2100b8b7a&hash=9F6C84184A378C8BBBC6ACCDFD805EDC',
+    imageAlt: "Colt Data Centres' Frankfurt Data Center Exterior",
+    description: 'Continuous maintenance and enhancement of Colt’s international multi-region site and campaign pages.',
+    technologies: ['Sitecore', 'Next.js', 'JavaScript', 'TailwindCSS', 'CSS'],
+    liveLink: 'https://www.coltdatacentres.net/en-GB',
+    githubLink: '',
+    details: {
+      video: 'https://youtu.be/yW-cEVlNkRU',
+      challenge: 'Maintaining and evolving a complex, scalable global website serving diverse regions and clients.',
+      solution: 'Rolled out multi-regional support features, campaign landing pages, and optimizations informed by analytics insights.',
+      features: [
+        'Global/regional support',
+        'Campaign landing pages',
+        'Performance and SEO audits'
+      ],
+      images: [
+        '/images/colt/colt-1.png',
+        '/images/colt/colt-2.png',
+        '/images/colt/colt-3.png',
+        '/images/colt/colt-4.png',
+        'https://www.coltdatacentres.net/-/media/Images/image-text/image-text-frankfurt-3.jpg?h=1625&iar=0&w=2875&rev=5f6cef6eaa0a409b826de7a2100b8b7a&hash=9C1243678150A3137284092D276C3833',
+        '/images/colt/colt-5.png',
+        '/images/colt/colt-6.png',
+        '/images/colt/colt-7.png',
+      ]
+    }
+  },
+  {
+    id: 6,
+    slug: 'team-lewis',
+    title: 'Team Lewis',
+    category: '',
+    image: 'https://www.teamlewis.com/cdn-cgi/image/width=1800,height=550,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/sites/2/2025/05/WordPress-Blog-Banner-Larger-2025-04-28T203901.088.png',
+    imageAlt: "Team Lewis' Agency Colour Flare graphic",
+    description: 'Revamped the Team Lewis agency site and co-developed Sidekick, a generative AI assistant for creative operations.',
+    technologies: ['WordPress', 'HTML', 'JavaScript', 'CSS', 'Tailwind CSS'],
+    liveLink: 'https://www.teamlewis.com/uk/',
+    githubLink: '',
+    details: {
+      video: 'https://youtu.be/4nROHbVbZjo',
+      challenge: 'Deliver a creative agency website and create tools to empower content/marketing teams.',
+      solution: 'Redesigned the website and launched Sidekick, a multimodal AI tool driving workflow and idea generation.',
+      features: [
+        'Agency website and CMS',
+        'AI assistant (Sidekick)',
+        'Creative tools integration',
+        'Technical onboarding materials'
+      ],
+      images: [
+        '/images/team-lewis/TL-1.png',
+        '/images/team-lewis/TL-2.png',
+        '/images/team-lewis/TL-3.png',
+        '/images/team-lewis/TL-4.png',
+      ]
+    }
+  },
+  {
+    id: 7,
+    slug: 'base-wellness',
+    title: 'Base Wellness',
+    category: '',
+    image: 'https://www.basewellness.co.uk/wp-content/uploads/2025/06/PTs-Running.jpg',
+    imageAlt: "Base Wellness' Personal Trainers Running Session",
+    description: 'End-to-end development of Base Wellness’s e-commerce site, supporting product launch & digital marketing.',
+    technologies: ['WordPress', 'WooCommerce', 'Elementor', 'JavaScript', 'HTML', 'CSS', 'PHP'],
+    liveLink: '',
+    githubLink: '',
+    details: {
+      challenge: 'Launching an appealing and robust e-commerce platform for health/wellness brands.',
+      solution: 'Led full e-commerce site build, integrated WooCommerce, and executed digital marketing and analytics.',
+      features: [
+        'Secure WooCommerce cart',
+        'Content/SEO optimization',
+        'HubSpot automation',
+        'Campaign and analytics setup'
+      ],
+      images: [
+        'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=800&q=80'
+      ]
+    }
+  }
+];
+
+
+export const getProjectBySlug = (slug: string): PortfolioProject | undefined => {
+  return portfolioData.find(project => project.slug === slug);
+};
+
+export const getNextProject = (currentSlug: string): PortfolioProject => {
+  const currentIndex = portfolioData.findIndex(p => p.slug === currentSlug);
+  const nextIndex = (currentIndex + 1) % portfolioData.length;
+  return portfolioData[nextIndex];
+};
+
+export const getPreviousProject = (currentSlug: string): PortfolioProject => {
+  const currentIndex = portfolioData.findIndex(p => p.slug === currentSlug);
+  const prevIndex = currentIndex === 0 ? portfolioData.length - 1 : currentIndex - 1;
+  return portfolioData[prevIndex];
+};
