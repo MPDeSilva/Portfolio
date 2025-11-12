@@ -231,7 +231,7 @@ export default function ProjectPage() {
       </motion.section>
 
         {/* Navigation Section */}
-        <section className="border-t border-gray-100 pt-8">
+        <section className="pt-8">
           <div className="flex justify-between items-center text-sm">
             <Link
               href={`/work/${previousProject.slug}`}
@@ -240,7 +240,7 @@ export default function ProjectPage() {
               <span className="text-lg transform group-hover:-translate-x-1 transition-transform duration-200">
                 ←
               </span>
-              <span>{previousProject.title}</span>
+              <h3>{previousProject.title}</h3>
             </Link>
 
             {/* <Link
@@ -254,7 +254,7 @@ export default function ProjectPage() {
               href={`/work/${nextProject.slug}`}
               className="group flex items-center gap-2 text-gray-600 hover:text-black transition-colors duration-200"
             >
-              <span>{nextProject.title}</span>
+              <h3>{nextProject.title}</h3>
               <span className="text-lg transform group-hover:translate-x-1 transition-transform duration-200">
                 →
               </span>
