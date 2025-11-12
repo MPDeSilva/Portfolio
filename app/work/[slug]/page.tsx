@@ -24,7 +24,7 @@ export default function ProjectPage() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-light mb-4">Project not found</h2>
+          <h2 className="text-2xl font-light mb-4">Project not found </h2>
           <Link href="/" className="text-blue-600 hover:underline">
             Return to portfolio
           </Link>
