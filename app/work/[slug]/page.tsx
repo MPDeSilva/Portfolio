@@ -1,16 +1,20 @@
-'use client';
+"use client";
 
-import { useParams } from 'next/navigation';
-import Link from 'next/link';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { getProjectBySlug, getNextProject, getPreviousProject } from '@/lib/portfolioData';
-import VideoPlayer from '@/components/VideoPlayer';
+import { useParams } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import {
+  getProjectBySlug,
+  getNextProject,
+  getPreviousProject,
+} from "@/lib/portfolioData";
+import VideoPlayer from "@/components/VideoPlayer";
 
 export default function ProjectPage() {
   const params = useParams();
-  const slug = typeof params.slug === 'string' ? params.slug : params.slug[0];
+  const slug = typeof params.slug === "string" ? params.slug : params.slug[0];
   const project = getProjectBySlug(slug);
   const nextProject = getNextProject(slug);
   const previousProject = getPreviousProject(slug);
@@ -36,43 +40,41 @@ export default function ProjectPage() {
     <div className="min-h-screen bg-white">
       {/* If there's a video, show it first with title below */}
       {hasVideo && (
-      <div className=''>
-            <>
-              {/* Video Player with Plyr */}
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-                className="aspect-video bg-gray-100 rounded-sm overflow-hidden mb-12 mx-auto"
-              >
-                <VideoPlayer videoId={project.details.video || ''} />
-        </motion.div>
+        <div className="">
+          <>
+            {/* Video Player with Plyr */}
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="aspect-video bg-gray-100 rounded-sm overflow-hidden mb-12 mx-auto"
+            >
+              <VideoPlayer videoId={project.details.video || ""} />
+            </motion.div>
 
-              {/* Title and Description below video */}
-        <motion.div
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-center md:max-w-6xl mx-auto px-[4vw]"
-        >
-                <h1 className="text-3xl md:text-5xl font-light mb-6">
-                  {project.title}
-                </h1>
-                <p className="md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                  {project.description}
-                </p>
-        </motion.div>
-            </>
-         
-      </div> 
+            {/* Title and Description below video */}
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-center md:max-w-6xl mx-auto px-[6vw] md:px-[4vw]"
+            >
+              <h1 className="text-3xl md:text-5xl font-light mb-6">
+                {project.title}
+              </h1>
+              <p className="md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                {project.description}
+              </p>
+            </motion.div>
+          </>
+        </div>
       )}
-      <div className="py-[3vw] px-[4vw]">
+      <div className="md:py-[3vw] md:px-[4vw] px-[6vw] py-[6vw]">
         <motion.section
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-
           {/* If no video, show title at top left */}
           {!hasVideo && (
             <motion.div
@@ -87,64 +89,65 @@ export default function ProjectPage() {
               <p className="text-gray-600 max-w-2xl leading-relaxed">
                 {project.description}
               </p>
-          </motion.div>
-        )}
+            </motion.div>
+          )}
 
           {/* Project Details Section */}
           <div className="max-w-8xl mx-auto mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               {/* Main Content */}
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="lg:col-span-2 space-y-8"
               >
                 {project.details.challenge && (
                   <div>
-            <h3 className="text-xl font-light mb-3">The Challenge</h3>
+                    <h3 className="text-xl font-light mb-3">The Challenge</h3>
                     <p className="text-gray-700 leading-relaxed">
-              {project.details.challenge}
-            </p>
+                      {project.details.challenge}
+                    </p>
                   </div>
                 )}
 
                 {project.details.solution && (
                   <div>
-            <h3 className="text-xl font-light mb-3">The Solution</h3>
+                    <h3 className="text-xl font-light mb-3">The Solution</h3>
                     <p className="text-gray-700 leading-relaxed">
-              {project.details.solution}
-            </p>
+                      {project.details.solution}
+                    </p>
                   </div>
                 )}
 
-                {project.details.features && project.details.features.length > 0 && (
-                  <div>
-            <h3 className="text-xl font-light mb-4">Key Features</h3>
-                    <ul className="space-y-2">
-              {project.details.features.map((feature, index) => (
-                        <li
-                  key={index}
-                          className="flex items-start text-gray-700"
-                >
-                  <span className="text-gray-400 mr-3">•</span>
-                          <span>{feature}</span>
-                        </li>
-              ))}
-            </ul>
-                  </div>
-                )}
-          </motion.div>
+                {project.details.features &&
+                  project.details.features.length > 0 && (
+                    <div>
+                      <h3 className="text-xl font-light mb-4">Key Features</h3>
+                      <ul className="space-y-2">
+                        {project.details.features.map((feature, index) => (
+                          <li
+                            key={index}
+                            className="flex items-start text-gray-700"
+                          >
+                            <span className="text-gray-400 mr-3">•</span>
+                            <span>{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+              </motion.div>
 
               {/* Sidebar */}
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-            className="space-y-6"
-          >
+                className="space-y-6"
+              >
                 {project.category && (
-            <div>
+                  <div>
                     <h4 className="text-sm text-gray-500 uppercase tracking-wider mb-2">
                       Category
                     </h4>
@@ -155,47 +158,47 @@ export default function ProjectPage() {
                 {project.technologies && project.technologies.length > 0 && (
                   <div>
                     <h4 className="text-sm text-gray-500 uppercase tracking-wider mb-3">
-                Technologies
+                      Technologies
                     </h4>
-              <div className="flex flex-wrap gap-2">
-                {project.technologies.map((tech, index) => (
-                  <span
-                    key={index}
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, index) => (
+                        <span
+                          key={index}
                           className="px-3 py-1 bg-gray-100 text-gray-700 text-sm"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 )}
 
                 {(project.liveLink || project.githubLink) && (
                   <div className="space-y-3 pt-4">
-              {project.liveLink && (
+                    {project.liveLink && (
                       <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="block w-full px-4 py-3 bg-black text-white text-center text-sm tracking-wide hover:bg-gray-800 transition-colors duration-200"
-                >
-                  View Live Project
+                      >
+                        View Live Project
                       </a>
-              )}
-              {project.githubLink && (
+                    )}
+                    {project.githubLink && (
                       <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="block w-full px-4 py-3 border border-black text-black text-center text-sm tracking-wide hover:bg-black hover:text-white transition-colors duration-200"
-                >
-                  View on GitHub
+                      >
+                        View on GitHub
                       </a>
-              )}
-            </div>
+                    )}
+                  </div>
                 )}
-          </motion.div>
-        </div>
+              </motion.div>
+            </div>
           </div>
 
           {/* Masonry Grid for Images */}
@@ -226,9 +229,7 @@ export default function ProjectPage() {
               ))}
             </motion.div>
           )}
-
-
-      </motion.section>
+        </motion.section>
 
         {/* Navigation Section */}
         <section className="pt-8">
@@ -260,8 +261,8 @@ export default function ProjectPage() {
               </span>
             </Link>
           </div>
-      </section>
-        </div>
+        </section>
+      </div>
     </div>
   );
 }
