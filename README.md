@@ -6,7 +6,7 @@ A modern, responsive portfolio website showcasing software and web development w
 
 
 
-## 🌟 About## Features
+## 🌟 About Features
 
 
 
@@ -18,7 +18,7 @@ This portfolio website serves as a digital showcase for Milinda Prasan De Silva'
 
 - 🖼️ Image zoom effect on hover
 
-Visit the live website: [Your Portfolio URL](https://your-portfolio-url.com)- 📧 Working contact form with email integration
+Visit the live website: [HERE](https://portfolio-kappa-five-70.vercel.app/)- 📧 Working contact form with email integration
 
 - 🔄 Project navigation with next/previous buttons
 

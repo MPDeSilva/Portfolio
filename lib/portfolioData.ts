@@ -271,7 +271,19 @@ export const portfolioData: PortfolioProject[] = [
     imageAlt: "Team Lewis' Agency Colour Flare graphic",
     description:
       "Revamped the Team Lewis agency site and co-developed Sidekick, a generative AI assistant for creative operations.",
-    technologies: ["WordPress", "HTML", "JavaScript", "CSS", "Tailwind CSS", "NextJS", "Vercel AI SDK", "ChatGPT", "Claude", "Gemini", "DeepSeek"],
+    technologies: [
+      "WordPress",
+      "HTML",
+      "JavaScript",
+      "CSS",
+      "Tailwind CSS",
+      "NextJS",
+      "Vercel AI SDK",
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "DeepSeek",
+    ],
     liveLink: "https://www.teamlewis.com/uk/",
     githubLink: "",
     details: {
@@ -333,68 +345,132 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-  id: 8,
-  slug: 'ember-website-app',
-  title: 'Ember',
-  category: '',
-  image: 'https://ember-bank.cdn.prismic.io/ember-bank/08ce6218-a4fd-4552-9338-b7ef9f2680f7_IMG_features.svg',
-  description: 'Led the redesign and enhancement of Ember’s website and collaborated on the development of Ember’s cloud-based accounting app, improving usability, accessibility, and feature set for thousands of users.',
-  technologies: ['Next.js', 'React', 'TypeScript', 'JavaScript', 'Prismic', 'Figma', 'TailwindCSS'],
-  liveLink: '', // Add your live link here if applicable
-  githubLink: '', // Add your repo link if applicable
-  details: {
-    challenge: 'Deliver a fully responsive website and application with advanced accounting features, high accessibility, and seamless content management.',
-    solution: 'Redesigned the website UI, optimized SEO and performance, reduced bugs, improved accessibility, and delivered robust new features to both web and app. Integrated Prismic CMS for agile updates and coordinated cross-functional feedback for continuous improvements.',
-    features: [
-      'Accessible, responsive web design',
-      '30+ new features launched for users',
-      'SEO optimization with Google Lighthouse (90+ scores)',
-      'Integrated Prismic headless CMS for agility',
-      'Robust user and security tracking',
-      'A/B testing & data-driven iteration',
-      'WCAG-compliant UI and app',
-      'Cross-platform mobile optimization',
-      'Comprehensive documentation and onboarding'
+    id: 8,
+    slug: "summit-learning",
+    title: "Summit Learning",
+    category: "",
+    image:
+      "https://www.teachers-uk.co.uk/wp-content/uploads/2020/11/shutterstock_1448047391-1080x627.jpg",
+    description:
+      "A modern, responsive website for Summit Learning, a UK tuition company delivering specialist education support for diverse backgrounds.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "CSS",
+      "TailwindCSS",
     ],
-    images: [
-      'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80',
-      'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80'
-    ]
-  }
-},
-{
-  id: 9,
-  slug: 'mili-personal-website',
-  title: 'Mili',
-  category: '',
-  image: '/images/mili/mili.jpg',
-  description: 'Led the redesign and enhancement of Ember’s website and collaborated on the development of Ember’s cloud-based accounting app, improving usability, accessibility, and feature set for thousands of users.',
-  technologies: ['Next.js', 'React', 'TypeScript', 'JavaScript', 'Prismic', 'Figma', 'TailwindCSS'],
-  liveLink: '', // Add your live link here if applicable
-  githubLink: '', // Add your repo link if applicable
-  details: {
-    challenge: 'Deliver a fully responsive website and application with advanced accounting features, high accessibility, and seamless content management.',
-    solution: 'Redesigned the website UI, optimized SEO and performance, reduced bugs, improved accessibility, and delivered robust new features to both web and app. Integrated Prismic CMS for agile updates and coordinated cross-functional feedback for continuous improvements.',
-    features: [
-      'Accessible, responsive web design',
-      '30+ new features launched for users',
-      'SEO optimization with Google Lighthouse (90+ scores)',
-      'Integrated Prismic headless CMS for agility',
-      'Robust user and security tracking',
-      'A/B testing & data-driven iteration',
-      'WCAG-compliant UI and app',
-      'Cross-platform mobile optimization',
-      'Comprehensive documentation and onboarding'
+    liveLink: "https://summit-learning-ashen.vercel.app/",
+    githubLink: "https://github.com/MiliDS-Lewis/SummitLearning",
+    details: {
+      challenge:
+        "Create a vibrant and professional website to showcase Summit Learning’s expertise, services, and unique UK-focused education approach.",
+      solution:
+        "Collaborated directly with the Founder to design and implement a site focused on clarity, usability, and conversion. Built an SEO-friendly, accessible platform highlighting tailored tutoring programs for students across various education backgrounds.",
+      features: [
+        "Customized landing pages for multiple education backgrounds",
+        "Responsive and mobile-first design",
+        "SEO optimized for UK education queries",
+        "Accessible site structure for all users",
+        "Contact and enquiry forms",
+        "Modular, easy-to-update components",
+        "Tutor profile and service showcase",
+      ],
+      images: [
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80",
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+      ],
+    },
+  },
+  {
+    id: 9,
+    slug: "ember-website-app",
+    title: "Ember",
+    category: "",
+    image:
+      "https://ember-bank.cdn.prismic.io/ember-bank/08ce6218-a4fd-4552-9338-b7ef9f2680f7_IMG_features.svg",
+    description:
+      "Led the redesign and enhancement of Ember’s website and collaborated on the development of Ember’s cloud-based accounting app, improving usability, accessibility, and feature set for thousands of users.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Prismic",
+      "Figma",
+      "TailwindCSS",
     ],
-    images: [
-      'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80',
-      'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80',
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80'
-    ]
-  }
-},
-
+    liveLink: "https://ember.co/",
+    githubLink: "", // Add your repo link if applicable
+    details: {
+      challenge:
+        "Deliver a fully responsive website and application with advanced accounting features, high accessibility, and seamless content management.",
+      solution:
+        "Redesigned the website UI, optimized SEO and performance, reduced bugs, improved accessibility, and delivered robust new features to both web and app. Integrated Prismic CMS for agile updates and coordinated cross-functional feedback for continuous improvements.",
+      features: [
+        "Accessible, responsive web design",
+        "30+ new features launched for users",
+        "SEO optimization with Google Lighthouse (90+ scores)",
+        "Integrated Prismic headless CMS for agility",
+        "Robust user and security tracking",
+        "A/B testing & data-driven iteration",
+        "WCAG-compliant UI and app",
+        "Cross-platform mobile optimization",
+        "Comprehensive documentation and onboarding",
+      ],
+      images: [
+        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80",
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+      ],
+    },
+  },
+  {
+    id: 10,
+    slug: "mili-personal-website",
+    title: "Mili",
+    category: "",
+    image: "/images/mili/mili.jpg",
+    description:
+      "A living CV and developer portfolio showcasing my journey, projects, and core skills. Designed to make updates effortless and content engaging.",
+    technologies: [
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "TailwindCSS",
+      "CSS",
+      "Prismic",
+      "Jest",
+    ],
+    liveLink: "https://milinda.dev",
+    githubLink: "https://github.com/MPDeSilva/MiliWebsite",
+    details: {
+      challenge:
+        "Build a modern, developer-focused personal website and CV that is easy to update and demonstrates advanced front-end and full stack experience.",
+      solution:
+        "Engineered a scalable React-based site with Prismic as a headless CMS, leveraging modern testing, responsive design, and built-in SEO analytics. The site serves as a central hub for my project portfolio, contact, and personal brand.",
+      features: [
+        "Dynamic content via Prismic CMS",
+        "Responsive design with TailwindCSS",
+        "Integrated CV and project portfolio",
+        "SEO optimization and analytics ready",
+        "Unit & integration testing with Jest",
+        "Clean, modular React & TypeScript architecture",
+        "Easy updates and extensibility",
+        "Future-proofed for new tech additions",
+      ],
+      images: [
+        "/images/mili/mili-1.png",
+        "/images/mili/mili-2.png",
+        "/images/mili/mili-3.png",
+        "/images/mili/mili-4.png",
+        "/images/mili/mili-5.png",
+        "/images/mili/mili-6.png",
+      ],
+    },
+  },
 ];
 
 export const getProjectBySlug = (
