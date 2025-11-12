@@ -14,7 +14,6 @@ export default function AboutPage() {
         "TypeScript",
         "TailwindCSS",
         "Sass/Scss",
-        "React Testing Library",
         "HTML",
         "CSS",
         "C#",
@@ -27,6 +26,8 @@ export default function AboutPage() {
         "Node.js",
         "Express",
         "React Native",
+        "React Testing Library",
+        "Playwright",
         "Jest",
         "Postman",
       ],
@@ -148,7 +149,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="flex md:flex-row flex-col md:space-x-4 md:space-y-0 space-y-4 items-center mx-auto">
+            <div className="flex md:flex-row flex-col md:space-x-4 md:space-y-0 space-y-4 items-start md:items-center mx-auto">
               <motion.a
                 href="https://drive.google.com/file/d/1Syunm0GvsCd44GrB1z-GVUZwAw7-Y4os/view?usp=sharing"
                 target="_blank"
