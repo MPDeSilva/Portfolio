@@ -101,7 +101,7 @@ export default function AboutPage() {
           {/* Text Content */}
           <div>
             <h1 className="text-4xl md:text-5xl font-light mb-8">
-              I'm Milinda. A developer from Location.
+              I'm Milinda. A developer from London.
             </h1>
             
             <div className="space-y-6 text-gray-700 leading-relaxed">
@@ -144,7 +144,7 @@ export default function AboutPage() {
 
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                or Download my CVs, I have my Software/Web Developer CV and my
+                or download my CVs, I have my Software/Web Developer CV and my
                 Project Manager CV available also.
               </p>
             </div>
