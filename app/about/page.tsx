@@ -151,7 +151,7 @@ export default function AboutPage() {
 
             <div className="flex md:flex-row flex-col md:space-x-4 md:space-y-0 space-y-4 items-start md:items-center mx-auto">
               <motion.a
-                href="https://drive.google.com/file/d/1Syunm0GvsCd44GrB1z-GVUZwAw7-Y4os/view?usp=sharing"
+                href="https://drive.google.com/file/d/1m-7cxZQJN6rS9AmX0w4kK0tRWdBgYm8V/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
@@ -161,7 +161,7 @@ export default function AboutPage() {
                 Software/Web Developer CV
               </motion.a>
               <motion.a
-                href="https://drive.google.com/file/d/1K1VFDvhIWZXsv7Gb4YHamp7o0bgR69sA/view?usp=sharing"
+                href="https://drive.google.com/file/d/1U1tuZjx0XV_jHPV06bzkPXQcjFz3Qr2l/view?usp=sharing"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 target="_blank"
