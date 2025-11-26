@@ -27,7 +27,7 @@ export const portfolioData: PortfolioProject[] = [
     title: "Northern Data",
     category: "",
     image:
-      "https://media.licdn.com/dms/image/v2/D4E10AQFfSi09Ar6z1w/image-shrink_1280/image-shrink_1280/0/1736355214559?e=1763380800&v=beta&t=NiG_gci3L1FIyeaQCVvP50aMjGJyoJWn1tOCwuC5j3A",
+      "https://static.fabrik.io/b41/76da9a18fb86c3f9.jpg?lossless=1&w=3840&h=5120&fit=max&s=9b349636e5121409264e4e9098c96f35",
     imageAlt: "Northern Data's Glass Hermit Campaign Showcase",
     description:
       "Led full rebuild of Northern Data Group’s main business site and web digital campaigns, elevating their digital presence and engagement.",
