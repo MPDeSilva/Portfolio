@@ -23,6 +23,134 @@ export interface PortfolioProject {
 export const portfolioData: PortfolioProject[] = [
   {
     id: 1,
+    slug: "kindkondr",
+    title: "KindKonDr",
+    category: "Coming Soon",
+    image: "https://neshealthcare.co.uk/wp-content/uploads/2018/02/Working-with-NES.jpg",
+    imageAlt:
+      "KindKonDr elderly patient care coordination dashboard for hospital teams",
+    description:
+      "Healthcare coordination platform prototype for UK hospitals to track elderly patients, assign social workers, and prevent vulnerable patients being lost in fragmented systems.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Firebase Auth",
+      "Mapbox",
+      "Google Maps API",
+    ],
+    liveLink: "", // add deployed URL or staging link
+    githubLink: "", // add repo URL if/when public
+    details: {
+      video: "", // optional demo link when ready
+      challenge:
+        "Replace ad-hoc spreadsheets and disconnected tools used by NHS teams to track vulnerable elderly patients, where incomplete data and poor assignment visibility can cause delays in care.",
+      solution:
+        "Designed a role-based web app where doctors, social workers, and patients share a single source of truth for patient records, assignments, and history, with proximity-based worker matching and transparent status tracking.",
+      features: [
+        "Hospital workspaces for managing elderly patients",
+        "Live dashboard table with status, assignments, and alerts",
+        "Role-based views for doctors, social workers, and patients",
+        "Patient profile pages with notes, documents, and history",
+        "Location-based matching of social workers to patients",
+        "Audit trail of assignments, gaps, and reassignments",
+        "Secure authentication and access control for all roles",
+      ],
+      images: [
+        "/images/kindkondr/kindkondr-1.png",
+        "/images/kindkondr/kindkondr-2.png",
+        "/images/kindkondr/kindkondr-3.png",
+      ],
+    },
+  },
+  {
+    id: 2,
+    slug: "travel-planner",
+    title: "Travel Planner",
+    category: "Coming Soon",
+    image: "https://thealphabetstore.co.uk/wp-content/uploads/2023/03/TRAVEL-JOURNAL-2.jpeg",
+    imageAlt: "Travel Planner app with map and trip timeline interface",
+    description:
+      "Fullstack travel planner web app where users create trips, add locations, and visualise journeys on an interactive map and 3D globe.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "Neon PostgreSQL",
+      "Google Maps",
+      "TailwindCSS",
+      "NextAuth",
+    ],
+    liveLink: "", // add deployed URL when ready
+    githubLink: "", // add repo URL when ready
+    details: {
+      video: "",
+      challenge:
+        "Design an end-to-end travel planner that persists user trips, locations, and itineraries while keeping the interface intuitive and visually rich.",
+      solution:
+        "Built authenticated trip dashboards backed by Neon PostgreSQL via Prisma, allowing users to create trips, attach locations, and visualise routes on embedded Google Maps and globe experiences.",
+      features: [
+        "User authentication and personal trip dashboards",
+        "Create, edit, and delete trips with rich metadata",
+        "Add locations to trips with map-based visualisation",
+        "Interactive drag-and-drop itinerary ordering",
+        "Map and 3D globe views for travel history",
+        "Responsive layout optimised for desktop and mobile",
+      ],
+      images: [
+        "/images/travel-planner/travel-1.png",
+        "/images/travel-planner/travel-2.png",
+        "/images/travel-planner/travel-3.png",
+      ],
+    },
+  },
+  {
+    id: 3,
+    slug: "mello-trello-clone",
+    title: "Mello",
+    category: "Coming Soon",
+    image: "https://www.teamplate.io/wp-content/uploads/2024/12/shutterstock_2289836763-1.jpg",
+    imageAlt: "Mello Trello-style project management board UI",
+    description:
+      "Fullstack Trello-style project management app with drag-and-drop boards, authentication, dashboards, and billing, built as a modern task workflow clone.",
+    technologies: [
+      "Next.js 15",
+      "TypeScript",
+      "Supabase",
+      "TailwindCSS",
+      "ShadCN UI",
+      "Stripe",
+      "Clerk",
+    ],
+    liveLink: "", // add deployed URL when ready
+    githubLink: "", // add repo URL when ready
+    details: {
+      video: "",
+      challenge:
+        "Build a modern Trello-style board app with real authentication, drag-and-drop task management, and paid upgrade paths to showcase fullstack product skills.",
+      solution:
+        "Implemented an authenticated dashboard where users manage boards, lists, and tasks using Supabase for data, Clerk for auth, Stripe for billing, and drag-and-drop for an intuitive Kanban experience.",
+      features: [
+        "Authenticated user dashboard with boards overview",
+        "Kanban boards with drag-and-drop columns and tasks",
+        "Board and task creation, editing, and filtering",
+        "Role-based access via auth provider",
+        "Usage limits and upgrade flow with Stripe",
+        "Responsive, modern UI with TailwindCSS and ShadCN UI",
+      ],
+      images: [
+        "/images/mello/mello-1.png",
+        "/images/mello/mello-2.png",
+        "/images/mello/mello-3.png",
+      ],
+    },
+  },
+  {
+    id: 4,
     slug: "northern-data",
     title: "Northern Data",
     category: "",
@@ -76,7 +204,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 2,
+    id: 5,
     slug: "ardent-data-centers",
     title: "Ardent Data Centers",
     category: "",
@@ -128,7 +256,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 3,
+    id: 6,
     slug: "taiga-cloud",
     title: "Taiga Cloud",
     category: "",
@@ -178,7 +306,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 4,
+    id: 7,
     slug: "ada-infrastructure",
     title: "Ada Infrastructure",
     category: "",
@@ -226,7 +354,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 5,
+    id: 8,
     slug: "colt-data-centers",
     title: "Colt Data Centres",
     category: "",
@@ -262,7 +390,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 6,
+    id: 9,
     slug: "team-lewis",
     title: "Team Lewis",
     category: "",
@@ -309,7 +437,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 7,
+    id: 10,
     slug: "base-wellness",
     title: "Base Wellness",
     category: "",
@@ -347,7 +475,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 8,
+    id: 11,
     slug: "summit-learning",
     title: "Summit Learning",
     category: "",
@@ -390,7 +518,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 9,
+    id: 12,
     slug: "ember-website-app",
     title: "Ember",
     category: "",
@@ -438,7 +566,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 10,
+    id: 13,
     slug: "mili-personal-website",
     title: "Mili",
     category: "",
@@ -479,6 +607,398 @@ export const portfolioData: PortfolioProject[] = [
         "/images/mili/mili-5.png",
         "/images/mili/mili-6.png",
       ],
+    },
+  },
+    {
+    id: 14,
+    slug: "thornacre-image-gallery",
+    title: "Image Gallery",
+    category: "",
+    image: "https://www.islands.com/img/gallery/a-bustling-yet-underrated-connecticut-city-is-home-to-americas-oldest-public-art-museum/l-intro-1733933490.jpg",
+    imageAlt: "Thornacre Albums responsive image gallery grid UI",
+    description:
+      "Interview task image gallery that consumes a remote albums API and presents a responsive, searchable grid with loaders, error handling, and accessibility baked in.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "React Query",
+      "Vite",
+    ],
+    liveLink: "", // add deployed URL if you host it
+    githubLink: "https://github.com/MPDeSilva/Thornacre-Task",
+    details: {
+      challenge:
+        "Implement an albums-based image gallery that fetches from a public API, supports responsive layout, search, and robust loading/error states suitable for production frontends.",
+      solution:
+        "Built a responsive grid UI powered by React Query for fetching and caching albums, debounced search for performance, skeleton loaders for perceived speed, and deterministic created-on dates generated from album IDs.",
+      features: [
+        "Fetches albums from jsonplaceholder API",
+        "Responsive Tailwind grid layout for album cards",
+        "Real-time search with 350ms debounce",
+        "Skeleton loading states matching card layout",
+        "Error and empty-result messaging",
+        "Stable generated created-on dates based on album ID",
+        "Accessibility-focused structure and keyboard-friendly controls",
+        "Local dev and Azure Static Web Apps-ready build",
+      ],
+      images: [
+        "/images/thornacre/thornacre-1.png",
+        "/images/thornacre/thornacre-2.png",
+        "/images/thornacre/thornacre-3.png",
+      ],
+    },
+  },
+  {
+    id: 15,
+    slug: "biglight-react-landing",
+    title: "George Retail",
+    category: "",
+    image: "https://www.buyandship.com.my/contents/uploads/2020/03/Shop-George-at-ASDA-and-Ship-to-Malaysia-1024x596.jpg",
+    imageAlt: "BigLight modular React landing page layout",
+    description:
+      "Interview task recreating a George-style landing page using a data-driven modules-and-blocks architecture in React.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "SCSS Modules",
+      "JavaScript",
+      "HTML",
+      "CSS",
+    ],
+    liveLink: "", // add deployed URL if you host it
+    githubLink: "https://github.com/MPDeSilva/BigLight-Task2-React",
+    details: {
+      challenge:
+        "Rebuild a marketing landing page using a flexible modules-and-blocks system that can be driven entirely from structured JSON content.",
+      solution:
+        "Structured the page as content-driven modules (navbar, hero, promo grid, offers, product grid) and reusable blocks, reading JSON from the DOM and mapping module types to React components for highly configurable layouts.",
+      features: [
+        "Modules architecture (Navbar, Hero, PromoGrid, OfferBanner, ProductGrid)",
+        "Reusable UI blocks (NavItem, PromoCard, ProductCard)",
+        "JSON-driven content loaded from a script tag",
+        "Map-based module routing for flexible layouts",
+        "Easy content editing by updating JSON only",
+        "Hot-reload local development with Vite",
+      ],
+      images: [
+        "/images/biglight/biglight-1.png",
+        "/images/biglight/biglight-2.png",
+        "/images/biglight/biglight-2.png",
+        "/images/biglight/biglight-3.png",
+      ],
+    },
+  },
+  {
+    id: 16,
+    slug: "basic-node-express-webserver",
+    title: "Basic Node + Express Web Server",
+    category: "",
+    image: "https://www.thewebkitchen.co.uk/wp-content/uploads/2011/12/what-is-a-web-server.jpg",
+    imageAlt: "Simple Node and Express web server in terminal",
+    description:
+      "Foundational Node.js and Express web server demonstrating routing, middleware, and basic HTTP handling.",
+    technologies: ["Node.js", "Express", "JavaScript"],
+    liveLink: "", // if hosted
+    githubLink: "https://github.com/MPDeSilva/BasicNodeExpressWebServer",
+    details: {
+      challenge:
+        "Create a minimal but clear Node.js and Express server to cement understanding of routing, middleware, and server setup.",
+      solution:
+        "Set up a lightweight Express server with clean route definitions, middleware, and environment-based configuration to serve as a base for future backend projects.",
+      features: [
+        "Express server setup with modular routes",
+        "Basic GET endpoints and responses",
+        "Environment-based configuration",
+        "Entry point for future APIs and services",
+      ],
+      images: [],
+    },
+  },
+  {
+    id: 17,
+    slug: "mongo-async-crud",
+    title: "MongoAsyncCRUD",
+    category: "",
+    image: "https://www.mongodb.com/docs/manual/static/4b1986c728e4ba0b47222fe837fa98e8/e0e5a/hero.webp",
+    imageAlt: "MongoDB CRUD operations in a Node.js app",
+    description:
+      "Tutorial-based Node.js, Express, and MongoDB project implementing asynchronous CRUD operations against a database.",
+    technologies: ["Node.js", "Express", "MongoDB", "Mongoose", "JavaScript"],
+    liveLink: "", // if hosted
+    githubLink: "https://github.com/MPDeSilva/MongoAsyncCRUD",
+    details: {
+      challenge:
+        "Build a full CRUD backend with Node, Express, and MongoDB that uses asynchronous patterns and clean separation of concerns.",
+      solution:
+        "Implemented RESTful create, read, update, and delete operations against MongoDB with async/await, structured routes, and data models.",
+      features: [
+        "Asynchronous CRUD endpoints using Express",
+        "MongoDB integration with a schema-based model layer",
+        "REST-style routes for entities",
+        "Error handling and basic validation patterns",
+      ],
+      images: [],
+    },
+  },
+  {
+    id: 18,
+    slug: "react-blog",
+    title: "React Blog",
+    category: "",
+    image: "https://www.simplybusiness.co.uk/wp-content/uploads/sites/3/2024/05/how-to-start-a-blog.jpg",
+    imageAlt: "React blog app posts list and detail view",
+    description:
+      "A simple blog application built with React to practice component-based UI, routing, and state management.",
+    technologies: ["React", "JavaScript", "HTML", "CSS"],
+    liveLink: "", // if hosted
+    githubLink: "https://github.com/MPDeSilva/ReactBlog",
+    details: {
+      challenge:
+        "Create a simple blog front-end to explore routing, reusable components, and client-side state.",
+      solution:
+        "Developed a React SPA with a posts list and detail views, demonstrating component composition and basic state handling.",
+      features: [
+        "Blog posts list and detail pages",
+        "Reusable layout and card components",
+        "Client-side routing",
+        "Simple, readable React architecture",
+      ],
+      images: [
+        "/images/react-blog/blog-1.png",
+        "/images/react-blog/blog-2.png",
+        "/images/react-blog/blog-3.png",
+      ],
+    },
+  },
+  {
+    id: 19,
+    slug: "colour-pixel",
+    title: "Colour Pixel",
+    category: "",
+    image: "https://mymodernmet.com/wp/wp-content/uploads/2018/05/painting-ideas-thumbnail-jpg.jpg",
+    imageAlt: "Colour Pixel app showing searched colour and hex code",
+    description:
+      "React-based colour finder app that lets users search colours, verify availability, and display the colour with its hex code.",
+    technologies: ["React", "JavaScript", "HTML", "CSS"],
+    liveLink: "https://colourpixel.dev/",
+    githubLink: "https://github.com/MPDeSilva/ColourPixel",
+    details: {
+      challenge:
+        "Build a small but polished app to explore dynamic UI updates, validation, and simple data structures in React.",
+      solution:
+        "Implemented a search-driven interface that checks input colours against a code-defined dataset and renders the colour and its hex code with clear feedback.",
+      features: [
+        "Colour search with instant feedback",
+        "Display of colour swatch and hex code",
+        "Validation for unknown colours",
+        "Responsive layout and simple visual design",
+      ],
+      images: [
+        "/images/colour-pixel/colour-pixel-1.png",
+        "/images/colour-pixel/colour-pixel-2.png",
+        "/images/colour-pixel/colour-pixel-3.png",
+      ],
+    },
+  },
+  {
+    id: 20,
+    slug: "grocery-list-app",
+    title: "Grocery List",
+    category: "",
+    image: "https://www.nicksofcalvert.com/wp-content/uploads/2023/08/shutterstock_748405867.jpg",
+    imageAlt: "Grocery List app interface for managing shopping items",
+    description:
+      "React grocery list application that lets users add, check off, and remove items with persistence via local storage.",
+    technologies: ["React", "JavaScript", "HTML", "CSS"],
+    liveLink: "https://milindagrocerylist.shop/",
+    githubLink: "https://github.com/MPDeSilva/GroceryListApp",
+    details: {
+      challenge:
+        "Create a practical app to manage grocery items while practising state management, event handling, and browser storage.",
+      solution:
+        "Developed a React UI where users maintain a checklist of items, with actions to add, toggle, and delete entries backed by local storage for persistence.",
+      features: [
+        "Add, check off, and delete grocery items",
+        "Local storage to persist the list between sessions",
+        "Simple, intuitive controls and layout",
+        "Clean React state and event handling patterns",
+      ],
+      images: [
+        "/images/grocery/grocery-1.png",
+        "/images/grocery/grocery-2.png",
+        "/images/grocery/grocery-3.png",
+      ],
+    },
+  },
+  {
+    id: 21,
+    slug: "simple-weather-app",
+    title: "Simple Weather",
+    category: "",
+    image: "https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/wolfgang-hasselmann-br-gllg7bs-unsplash-2_ver_1.jpg",
+    imageAlt: "Weather app UI showing city weather details",
+    description:
+      "React weather application using the OpenWeather API to display real-time conditions for cities worldwide.",
+    technologies: ["React", "JavaScript", "OpenWeather API", "CSS"],
+    liveLink: "https://milindaweather.dev/",
+    githubLink: "https://github.com/MPDeSilva/SimpleWeatherApp",
+    details: {
+      challenge:
+        "Learn to integrate third-party APIs into a React front-end and present real-time data in a clear UI.",
+      solution:
+        "Built a search-driven interface that calls the OpenWeather API and renders temperature, humidity, wind speed, and conditions in a responsive layout.",
+      features: [
+        "Search for any city to view weather",
+        "Display temperature, humidity, wind, and conditions",
+        "Responsive design for different devices",
+        "Practical example of API integration in React",
+      ],
+      images: [
+        "/images/weather/weather-1.png",
+        "/images/weather/weather-2.png",
+        "/images/weather/weather-3.png",
+      ],
+    },
+  },
+    {
+    id: 22,
+    slug: "rate-my-accommodation",
+    title: "Rate My Accommodation",
+    category: "",
+    image: "https://media.www.kent.ac.uk/se/24768/KentUni3188-1920x1280_1920w.jpg",
+    imageAlt: "RateMyAccommodation student housing reviews interface",
+    description:
+      "Concept and early-stage build of a platform for reviewing UK university accommodations, later sold and handed over to a client for further development.[file:1][web:61]",
+    technologies: ["TypeScript", "JavaScript", "CSS", "HTML"],
+    liveLink: "https://rate-my-accommodation-gyia4wc3d-mpdesilva.vercel.app/",
+    githubLink: "https://github.com/MPDeSilva/RateMyAccommodation",
+    details: {
+      challenge:
+        "Give students a dedicated place to rate and review university accommodations so others can make informed housing decisions, beyond generic review sites.[file:1]",
+      solution:
+        "Designed and prototyped a web app with typed front-end code and structured layouts, validating the concept enough for a client to acquire and continue development.[file:1]",
+      features: [
+        "Concept for student accommodation reviews and ratings.[file:1]",
+        "Typed front-end using TypeScript for safer iteration.[file:1]",
+        "Structured layouts styled with CSS.[file:1]",
+        "Experience in scoping, pitching, and selling a project concept to a client.[file:1]",
+      ],
+      images: [],
+    },
+  },
+  {
+    id: 23,
+    slug: "youtube-clone",
+    title: "YouTube Homepage Clone",
+    category: "",
+    image: "https://admin.ositcom.com/media/blog/blog-posts/youtube-makes-it-easier-for-teens-to-find-mental-health-support.jpg",
+    imageAlt: "YouTube homepage clone layout",
+    description:
+      "A front-end clone of the YouTube homepage built as part of an HTML/CSS course, focusing on layout, responsiveness, and UI components.[web:68]",
+    technologies: ["HTML", "CSS"],
+    liveLink: "https://milindayoutube.dev/youtube.html",
+    githubLink: "https://github.com/MPDeSilva/YouTubeClone",
+    details: {
+      challenge:
+        "Recreate a complex, real-world homepage to deepen understanding of semantic HTML and modern CSS layout techniques.[web:68]",
+      solution:
+        "Built a static but responsive clone of the YouTube homepage with a structured grid, navigation bar, sidebar, and video cards styled using Flexbox, Grid, and media queries.[web:68]",
+      features: [
+        "Semantic HTML5 layout for a video platform homepage.[web:68]",
+        "CSS Grid and Flexbox for complex responsive layouts.[web:68]",
+        "Navigation bar, sidebar, and video thumbnail components.[web:68]",
+        "Responsive design with media queries for different screen sizes.[web:68]",
+      ],
+      images: [],
+    },
+  },
+  {
+    id: 24,
+    slug: "asteroid-game",
+    title: "Asteroid Game – Classic Atari-Inspired Game",
+    category: "",
+    image: "https://assets-prd.ignimgs.com/2022/04/16/asteroids-1650127824496.jpg",
+    imageAlt: "Asteroid-style JavaScript browser game",
+    description:
+      "Browser-based version of the classic Atari-style asteroid game built as a university project using JavaScript, HTML, and CSS.[web:69]",
+    technologies: ["JavaScript", "HTML", "CSS"],
+    liveLink: "https://asteroid-game-5njur92ao-mpdesilva.vercel.app/",
+    githubLink: "https://github.com/MPDeSilva/AsteroidGame",
+    details: {
+      challenge:
+        "Implement an arcade-style game in the browser, handling game loops, collisions, and user input while working within university time constraints.[web:69]",
+      solution:
+        "Developed a playable asteroids experience with core movement and interaction logic, using plain JavaScript for the game loop and DOM/CSS for visuals.[web:69]",
+      features: [
+        "Classic asteroid-style gameplay logic in JavaScript.[web:69]",
+        "Keyboard input handling for movement and actions.[web:69]",
+        "DOM- and CSS-based visual presentation.[web:69]",
+        "Documented learnings around scope, timeboxing, and iteration.[web:69]",
+      ],
+      images: [],
+    },
+  },
+  {
+    id: 25,
+    slug: "giki-frontend-task",
+    title: "Giki Frontend Challenge",
+    category: "",
+    image: "https://giki.earth/wp-content/uploads/2024/02/Homepage-images-500x500-1.png",
+    imageAlt: "Giki frontend challenge React marketing layout",
+    description:
+      "Frontend interview task for Giki built with React, TypeScript, TailwindCSS, and tests, deployed via Vercel.[web:60]",
+    technologies: [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "React Testing Library",
+      "Jest",
+      "Figma",
+    ],
+    liveLink: "https://giki-front-end-challenge.vercel.app/",
+    githubLink: "https://github.com/MPDeSilva/GikiFrontEndChallenge",
+    details: {
+      challenge:
+        "Implement a pixel-accurate marketing page from a Figma asset while incorporating modern tooling, testing, and performance best practices.[web:60]",
+      solution:
+        "Delivered a responsive React implementation styled with TailwindCSS, added unit tests with React Testing Library/Jest, and verified SEO/performance with Lighthouse before deploying on Vercel.[web:60]",
+      features: [
+        "Figma-based responsive layout implementation.[web:60]",
+        "Type-safe React components with TypeScript.[web:60]",
+        "Styling via TailwindCSS utility classes.[web:60]",
+        "Unit tests with React Testing Library and Jest.[web:60]",
+        "Lighthouse-checked performance and SEO.[web:60]",
+        "Deployed with Vercel for production-like review.[web:60]",
+      ],
+      images: [],
+    },
+  },
+  {
+    id: 26,
+    slug: "ember-interview-landing",
+    title: "Ember Website Interview Challenge",
+    category: "",
+    image: "https://images.prismic.io/ember-bank/e1ba5988-3347-41e0-a108-956735d0678a_1200x627+B+Homepage.png?auto=compress,format",
+    imageAlt: "Ember interview landing page recreation",
+    description:
+      "Timed interview challenge recreating an Ember marketing page in React, focusing on layout, branding, and speed under time pressure.[web:63]",
+    technologies: ["React", "JavaScript", "CSS", "Node.js"],
+    liveLink: "", // add if you redeploy it
+    githubLink: "https://github.com/MPDeSilva/EmberWebsite",
+    details: {
+      challenge:
+        "Rebuild a provided marketing design in a short timed window, demonstrating front-end skills and ability to work under constraints.[web:63]",
+      solution:
+        "Implemented most of the target page structure and styling with React, achieving a visually similar layout within the time limit and recording a walkthrough video of the result.[web:63]",
+      features: [
+        "Rapid layout and styling from design screenshots.[web:63]",
+        "React component structure suitable for extension.[web:63]",
+        "Interview-style time-boxed delivery.[web:63]",
+        "Video walkthrough demonstrating the implemented UI.[web:63]",
+      ],
+      images: [],
     },
   },
 ];
