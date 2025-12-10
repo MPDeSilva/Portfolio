@@ -870,20 +870,20 @@ export const portfolioData: PortfolioProject[] = [
     image: "https://media.www.kent.ac.uk/se/24768/KentUni3188-1920x1280_1920w.jpg",
     imageAlt: "RateMyAccommodation student housing reviews interface",
     description:
-      "Concept and early-stage build of a platform for reviewing UK university accommodations, later sold and handed over to a client for further development.[file:1][web:61]",
+      "Concept and early-stage build of a platform for reviewing UK university accommodations, later sold and handed over to a client for further development.",
     technologies: ["TypeScript", "JavaScript", "CSS", "HTML"],
     liveLink: "https://rate-my-accommodation-gyia4wc3d-mpdesilva.vercel.app/",
     githubLink: "https://github.com/MPDeSilva/RateMyAccommodation",
     details: {
       challenge:
-        "Give students a dedicated place to rate and review university accommodations so others can make informed housing decisions, beyond generic review sites.[file:1]",
+        "Give students a dedicated place to rate and review university accommodations so others can make informed housing decisions, beyond generic review sites.",
       solution:
-        "Designed and prototyped a web app with typed front-end code and structured layouts, validating the concept enough for a client to acquire and continue development.[file:1]",
+        "Designed and prototyped a web app with typed front-end code and structured layouts, validating the concept enough for a client to acquire and continue development.",
       features: [
-        "Concept for student accommodation reviews and ratings.[file:1]",
-        "Typed front-end using TypeScript for safer iteration.[file:1]",
-        "Structured layouts styled with CSS.[file:1]",
-        "Experience in scoping, pitching, and selling a project concept to a client.[file:1]",
+        "Concept for student accommodation reviews and ratings.",
+        "Typed front-end using TypeScript for safer iteration.",
+        "Structured layouts styled with CSS.",
+        "Experience in scoping, pitching, and selling a project concept to a client.",
       ],
       images: [],
     },
@@ -896,20 +896,20 @@ export const portfolioData: PortfolioProject[] = [
     image: "https://admin.ositcom.com/media/blog/blog-posts/youtube-makes-it-easier-for-teens-to-find-mental-health-support.jpg",
     imageAlt: "YouTube homepage clone layout",
     description:
-      "A front-end clone of the YouTube homepage built as part of an HTML/CSS course, focusing on layout, responsiveness, and UI components.[web:68]",
+      "A front-end clone of the YouTube homepage built as part of an HTML/CSS course, focusing on layout, responsiveness, and UI components.",
     technologies: ["HTML", "CSS"],
     liveLink: "https://milindayoutube.dev/youtube.html",
     githubLink: "https://github.com/MPDeSilva/YouTubeClone",
     details: {
       challenge:
-        "Recreate a complex, real-world homepage to deepen understanding of semantic HTML and modern CSS layout techniques.[web:68]",
+        "Recreate a complex, real-world homepage to deepen understanding of semantic HTML and modern CSS layout techniques.",
       solution:
-        "Built a static but responsive clone of the YouTube homepage with a structured grid, navigation bar, sidebar, and video cards styled using Flexbox, Grid, and media queries.[web:68]",
+        "Built a static but responsive clone of the YouTube homepage with a structured grid, navigation bar, sidebar, and video cards styled using Flexbox, Grid, and media queries.",
       features: [
-        "Semantic HTML5 layout for a video platform homepage.[web:68]",
-        "CSS Grid and Flexbox for complex responsive layouts.[web:68]",
-        "Navigation bar, sidebar, and video thumbnail components.[web:68]",
-        "Responsive design with media queries for different screen sizes.[web:68]",
+        "Semantic HTML5 layout for a video platform homepage.",
+        "CSS Grid and Flexbox for complex responsive layouts.",
+        "Navigation bar, sidebar, and video thumbnail components.",
+        "Responsive design with media queries for different screen sizes.",
       ],
       images: [],
     },
@@ -922,20 +922,20 @@ export const portfolioData: PortfolioProject[] = [
     image: "https://assets-prd.ignimgs.com/2022/04/16/asteroids-1650127824496.jpg",
     imageAlt: "Asteroid-style JavaScript browser game",
     description:
-      "Browser-based version of the classic Atari-style asteroid game built as a university project using JavaScript, HTML, and CSS.[web:69]",
+      "Browser-based version of the classic Atari-style asteroid game built as a university project using JavaScript, HTML, and CSS.",
     technologies: ["JavaScript", "HTML", "CSS"],
     liveLink: "https://asteroid-game-5njur92ao-mpdesilva.vercel.app/",
     githubLink: "https://github.com/MPDeSilva/AsteroidGame",
     details: {
       challenge:
-        "Implement an arcade-style game in the browser, handling game loops, collisions, and user input while working within university time constraints.[web:69]",
+        "Implement an arcade-style game in the browser, handling game loops, collisions, and user input while working within university time constraints.",
       solution:
-        "Developed a playable asteroids experience with core movement and interaction logic, using plain JavaScript for the game loop and DOM/CSS for visuals.[web:69]",
+        "Developed a playable asteroids experience with core movement and interaction logic, using plain JavaScript for the game loop and DOM/CSS for visuals.",
       features: [
-        "Classic asteroid-style gameplay logic in JavaScript.[web:69]",
-        "Keyboard input handling for movement and actions.[web:69]",
-        "DOM- and CSS-based visual presentation.[web:69]",
-        "Documented learnings around scope, timeboxing, and iteration.[web:69]",
+        "Classic asteroid-style gameplay logic in JavaScript.",
+        "Keyboard input handling for movement and actions.",
+        "DOM- and CSS-based visual presentation.",
+        "Documented learnings around scope, timeboxing, and iteration.",
       ],
       images: [],
     },
@@ -948,7 +948,7 @@ export const portfolioData: PortfolioProject[] = [
     image: "https://giki.earth/wp-content/uploads/2024/02/Homepage-images-500x500-1.png",
     imageAlt: "Giki frontend challenge React marketing layout",
     description:
-      "Frontend interview task for Giki built with React, TypeScript, TailwindCSS, and tests, deployed via Vercel.[web:60]",
+      "Frontend interview task for Giki built with React, TypeScript, TailwindCSS, and tests, deployed via Vercel.",
     technologies: [
       "React",
       "TypeScript",
@@ -961,16 +961,16 @@ export const portfolioData: PortfolioProject[] = [
     githubLink: "https://github.com/MPDeSilva/GikiFrontEndChallenge",
     details: {
       challenge:
-        "Implement a pixel-accurate marketing page from a Figma asset while incorporating modern tooling, testing, and performance best practices.[web:60]",
+        "Implement a pixel-accurate marketing page from a Figma asset while incorporating modern tooling, testing, and performance best practices.",
       solution:
-        "Delivered a responsive React implementation styled with TailwindCSS, added unit tests with React Testing Library/Jest, and verified SEO/performance with Lighthouse before deploying on Vercel.[web:60]",
+        "Delivered a responsive React implementation styled with TailwindCSS, added unit tests with React Testing Library/Jest, and verified SEO/performance with Lighthouse before deploying on Vercel.",
       features: [
-        "Figma-based responsive layout implementation.[web:60]",
-        "Type-safe React components with TypeScript.[web:60]",
-        "Styling via TailwindCSS utility classes.[web:60]",
-        "Unit tests with React Testing Library and Jest.[web:60]",
-        "Lighthouse-checked performance and SEO.[web:60]",
-        "Deployed with Vercel for production-like review.[web:60]",
+        "Figma-based responsive layout implementation.",
+        "Type-safe React components with TypeScript.",
+        "Styling via TailwindCSS utility classes.",
+        "Unit tests with React Testing Library and Jest.",
+        "Lighthouse-checked performance and SEO.",
+        "Deployed with Vercel for production-like review.",
       ],
       images: [],
     },
@@ -983,20 +983,20 @@ export const portfolioData: PortfolioProject[] = [
     image: "https://images.prismic.io/ember-bank/e1ba5988-3347-41e0-a108-956735d0678a_1200x627+B+Homepage.png?auto=compress,format",
     imageAlt: "Ember interview landing page recreation",
     description:
-      "Timed interview challenge recreating an Ember marketing page in React, focusing on layout, branding, and speed under time pressure.[web:63]",
+      "Timed interview challenge recreating an Ember marketing page in React, focusing on layout, branding, and speed under time pressure.",
     technologies: ["React", "JavaScript", "CSS", "Node.js"],
     liveLink: "", // add if you redeploy it
     githubLink: "https://github.com/MPDeSilva/EmberWebsite",
     details: {
       challenge:
-        "Rebuild a provided marketing design in a short timed window, demonstrating front-end skills and ability to work under constraints.[web:63]",
+        "Rebuild a provided marketing design in a short timed window, demonstrating front-end skills and ability to work under constraints.",
       solution:
-        "Implemented most of the target page structure and styling with React, achieving a visually similar layout within the time limit and recording a walkthrough video of the result.[web:63]",
+        "Implemented most of the target page structure and styling with React, achieving a visually similar layout within the time limit and recording a walkthrough video of the result.",
       features: [
-        "Rapid layout and styling from design screenshots.[web:63]",
-        "React component structure suitable for extension.[web:63]",
-        "Interview-style time-boxed delivery.[web:63]",
-        "Video walkthrough demonstrating the implemented UI.[web:63]",
+        "Rapid layout and styling from design screenshots.",
+        "React component structure suitable for extension.",
+        "Interview-style time-boxed delivery.",
+        "Video walkthrough demonstrating the implemented UI.",
       ],
       images: [],
     },
