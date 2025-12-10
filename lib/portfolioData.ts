@@ -27,7 +27,7 @@ export const portfolioData: PortfolioProject[] = [
     title: "Northern Data",
     category: "",
     image:
-      "https://static.fabrik.io/b41/76da9a18fb86c3f9.jpg?lossless=1&w=3840&h=5120&fit=max&s=9b349636e5121409264e4e9098c96f35",
+      "https://media.licdn.com/dms/image/v2/D4E10AQFfSi09Ar6z1w/image-shrink_1280/image-shrink_1280/0/1736355214559?e=1765969200&v=beta&t=YmHtYRwyc1Z8DrmGijyng5KmOV7upJE21qxITZ5QI0I",
     imageAlt: "Northern Data's Glass Hermit Campaign Showcase",
     description:
       "Led full rebuild of Northern Data Group’s main business site and web digital campaigns, elevating their digital presence and engagement.",
@@ -300,8 +300,10 @@ export const portfolioData: PortfolioProject[] = [
       ],
       images: [
         "/images/team-lewis/TL-1.png",
+        "/images/team-lewis/sidekick-1.jpeg",
         "/images/team-lewis/TL-2.png",
         "/images/team-lewis/TL-3.png",
+        "/images/team-lewis/sidekick-3.jpeg",
         "/images/team-lewis/TL-4.png",
       ],
     },
@@ -325,7 +327,7 @@ export const portfolioData: PortfolioProject[] = [
       "CSS",
       "PHP",
     ],
-    liveLink: "",
+    liveLink: "https://www.basewellness.co.uk/",
     githubLink: "",
     details: {
       video: "https://youtu.be/HifQsbC8RJ0",
@@ -378,9 +380,12 @@ export const portfolioData: PortfolioProject[] = [
         "Tutor profile and service showcase",
       ],
       images: [
-        "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&q=80",
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+        "/images/summit-learning/summit-1.png",
+        "/images/summit-learning/summit-2.png",
+        "/images/summit-learning/summit-3.png",
+        "/images/summit-learning/summit-4.png",
+        "/images/summit-learning/summit-5.png",
+        "/images/summit-learning/summit-6.png",
       ],
     },
   },
