@@ -26,7 +26,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "kindkondr",
     title: "KindKonDr",
     category: "Coming Soon",
-    image: "https://neshealthcare.co.uk/wp-content/uploads/2018/02/Working-with-NES.jpg",
+    image:
+      "https://neshealthcare.co.uk/wp-content/uploads/2018/02/Working-with-NES.jpg",
     imageAlt:
       "KindKonDr elderly patient care coordination dashboard for hospital teams",
     description:
@@ -72,7 +73,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "travel-planner",
     title: "Travel Planner",
     category: "Coming Soon",
-    image: "https://thealphabetstore.co.uk/wp-content/uploads/2023/03/TRAVEL-JOURNAL-2.jpeg",
+    image:
+      "https://thealphabetstore.co.uk/wp-content/uploads/2023/03/TRAVEL-JOURNAL-2.jpeg",
     imageAlt: "Travel Planner app with map and trip timeline interface",
     description:
       "Fullstack travel planner web app where users create trips, add locations, and visualise journeys on an interactive map and 3D globe.",
@@ -113,7 +115,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "mello-trello-clone",
     title: "Mello",
     category: "Coming Soon",
-    image: "https://www.teamplate.io/wp-content/uploads/2024/12/shutterstock_2289836763-1.jpg",
+    image:
+      "https://www.teamplate.io/wp-content/uploads/2024/12/shutterstock_2289836763-1.jpg",
     imageAlt: "Mello Trello-style project management board UI",
     description:
       "Fullstack Trello-style project management app with drag-and-drop boards, authentication, dashboards, and billing, built as a modern task workflow clone.",
@@ -469,9 +472,7 @@ export const portfolioData: PortfolioProject[] = [
         "HubSpot automation",
         "Campaign and analytics setup",
       ],
-      images: [
-        "",
-      ],
+      images: [""],
     },
   },
   {
@@ -609,22 +610,17 @@ export const portfolioData: PortfolioProject[] = [
       ],
     },
   },
-    {
+  {
     id: 14,
     slug: "thornacre-image-gallery",
     title: "Image Gallery",
     category: "",
-    image: "https://www.islands.com/img/gallery/a-bustling-yet-underrated-connecticut-city-is-home-to-americas-oldest-public-art-museum/l-intro-1733933490.jpg",
+    image:
+      "https://www.islands.com/img/gallery/a-bustling-yet-underrated-connecticut-city-is-home-to-americas-oldest-public-art-museum/l-intro-1733933490.jpg",
     imageAlt: "Thornacre Albums responsive image gallery grid UI",
     description:
       "Interview task image gallery that consumes a remote albums API and presents a responsive, searchable grid with loaders, error handling, and accessibility baked in.",
-    technologies: [
-      "React",
-      "TypeScript",
-      "TailwindCSS",
-      "React Query",
-      "Vite",
-    ],
+    technologies: ["React", "TypeScript", "TailwindCSS", "React Query", "Vite"],
     liveLink: "", // add deployed URL if you host it
     githubLink: "https://github.com/MPDeSilva/Thornacre-Task",
     details: {
@@ -654,7 +650,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "biglight-react-landing",
     title: "George Retail",
     category: "",
-    image: "https://www.buyandship.com.my/contents/uploads/2020/03/Shop-George-at-ASDA-and-Ship-to-Malaysia-1024x596.jpg",
+    image:
+      "https://www.buyandship.com.my/contents/uploads/2020/03/Shop-George-at-ASDA-and-Ship-to-Malaysia-1024x596.jpg",
     imageAlt: "BigLight modular React landing page layout",
     description:
       "Interview task recreating a George-style landing page using a data-driven modules-and-blocks architecture in React.",
@@ -695,7 +692,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "basic-node-express-webserver",
     title: "Basic Node + Express Web Server",
     category: "",
-    image: "https://www.thewebkitchen.co.uk/wp-content/uploads/2011/12/what-is-a-web-server.jpg",
+    image:
+      "https://www.thewebkitchen.co.uk/wp-content/uploads/2011/12/what-is-a-web-server.jpg",
     imageAlt: "Simple Node and Express web server in terminal",
     description:
       "Foundational Node.js and Express web server demonstrating routing, middleware, and basic HTTP handling.",
@@ -721,7 +719,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "mongo-async-crud",
     title: "MongoAsyncCRUD",
     category: "",
-    image: "https://www.mongodb.com/docs/manual/static/4b1986c728e4ba0b47222fe837fa98e8/e0e5a/hero.webp",
+    image:
+      "https://www.mongodb.com/docs/manual/static/4b1986c728e4ba0b47222fe837fa98e8/e0e5a/hero.webp",
     imageAlt: "MongoDB CRUD operations in a Node.js app",
     description:
       "Tutorial-based Node.js, Express, and MongoDB project implementing asynchronous CRUD operations against a database.",
@@ -747,7 +746,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "react-blog",
     title: "React Blog",
     category: "",
-    image: "https://www.simplybusiness.co.uk/wp-content/uploads/sites/3/2024/05/how-to-start-a-blog.jpg",
+    image:
+      "https://www.simplybusiness.co.uk/wp-content/uploads/sites/3/2024/05/how-to-start-a-blog.jpg",
     imageAlt: "React blog app posts list and detail view",
     description:
       "A simple blog application built with React to practice component-based UI, routing, and state management.",
@@ -777,7 +777,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "colour-pixel",
     title: "Colour Pixel",
     category: "",
-    image: "https://mymodernmet.com/wp/wp-content/uploads/2018/05/painting-ideas-thumbnail-jpg.jpg",
+    image:
+      "https://mymodernmet.com/wp/wp-content/uploads/2018/05/painting-ideas-thumbnail-jpg.jpg",
     imageAlt: "Colour Pixel app showing searched colour and hex code",
     description:
       "React-based colour finder app that lets users search colours, verify availability, and display the colour with its hex code.",
@@ -807,7 +808,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "grocery-list-app",
     title: "Grocery List",
     category: "",
-    image: "https://www.nicksofcalvert.com/wp-content/uploads/2023/08/shutterstock_748405867.jpg",
+    image:
+      "https://www.nicksofcalvert.com/wp-content/uploads/2023/08/shutterstock_748405867.jpg",
     imageAlt: "Grocery List app interface for managing shopping items",
     description:
       "React grocery list application that lets users add, check off, and remove items with persistence via local storage.",
@@ -837,7 +839,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "simple-weather-app",
     title: "Simple Weather",
     category: "",
-    image: "https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/wolfgang-hasselmann-br-gllg7bs-unsplash-2_ver_1.jpg",
+    image:
+      "https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/wolfgang-hasselmann-br-gllg7bs-unsplash-2_ver_1.jpg",
     imageAlt: "Weather app UI showing city weather details",
     description:
       "React weather application using the OpenWeather API to display real-time conditions for cities worldwide.",
@@ -862,12 +865,13 @@ export const portfolioData: PortfolioProject[] = [
       ],
     },
   },
-    {
+  {
     id: 22,
     slug: "rate-my-accommodation",
     title: "Rate My Accommodation",
     category: "",
-    image: "https://media.www.kent.ac.uk/se/24768/KentUni3188-1920x1280_1920w.jpg",
+    image:
+      "https://media.www.kent.ac.uk/se/24768/KentUni3188-1920x1280_1920w.jpg",
     imageAlt: "RateMyAccommodation student housing reviews interface",
     description:
       "Concept and early-stage build of a platform for reviewing UK university accommodations, later sold and handed over to a client for further development.",
@@ -893,7 +897,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "youtube-clone",
     title: "YouTube Homepage Clone",
     category: "",
-    image: "https://admin.ositcom.com/media/blog/blog-posts/youtube-makes-it-easier-for-teens-to-find-mental-health-support.jpg",
+    image:
+      "https://admin.ositcom.com/media/blog/blog-posts/youtube-makes-it-easier-for-teens-to-find-mental-health-support.jpg",
     imageAlt: "YouTube homepage clone layout",
     description:
       "A front-end clone of the YouTube homepage built as part of an HTML/CSS course, focusing on layout, responsiveness, and UI components.",
@@ -919,7 +924,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "asteroid-game",
     title: "Asteroid Game – Classic Atari-Inspired Game",
     category: "",
-    image: "https://assets-prd.ignimgs.com/2022/04/16/asteroids-1650127824496.jpg",
+    image:
+      "https://assets-prd.ignimgs.com/2022/04/16/asteroids-1650127824496.jpg",
     imageAlt: "Asteroid-style JavaScript browser game",
     description:
       "Browser-based version of the classic Atari-style asteroid game built as a university project using JavaScript, HTML, and CSS.",
@@ -945,7 +951,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "giki-frontend-task",
     title: "Giki Frontend Challenge",
     category: "",
-    image: "https://giki.earth/wp-content/uploads/2024/02/Homepage-images-500x500-1.png",
+    image:
+      "https://giki.earth/wp-content/uploads/2024/02/Homepage-images-500x500-1.png",
     imageAlt: "Giki frontend challenge React marketing layout",
     description:
       "Frontend interview task for Giki built with React, TypeScript, TailwindCSS, and tests, deployed via Vercel.",
@@ -980,7 +987,8 @@ export const portfolioData: PortfolioProject[] = [
     slug: "ember-interview-landing",
     title: "Ember Website Interview Challenge",
     category: "",
-    image: "https://images.prismic.io/ember-bank/e1ba5988-3347-41e0-a108-956735d0678a_1200x627+B+Homepage.png?auto=compress,format",
+    image:
+      "https://images.prismic.io/ember-bank/e1ba5988-3347-41e0-a108-956735d0678a_1200x627+B+Homepage.png?auto=compress,format",
     imageAlt: "Ember interview landing page recreation",
     description:
       "Timed interview challenge recreating an Ember marketing page in React, focusing on layout, branding, and speed under time pressure.",
@@ -997,6 +1005,42 @@ export const portfolioData: PortfolioProject[] = [
         "React component structure suitable for extension.",
         "Interview-style time-boxed delivery.",
         "Video walkthrough demonstrating the implemented UI.",
+      ],
+      images: [],
+    },
+  },
+  {
+    id: 27,
+    slug: "lucas-systems",
+    title: "Lucas Systems",
+    category: "",
+    image:
+      "https://bevinfogroup.com/wp-content/uploads/2025/12/lucas-systems.jpg",
+    imageAlt:
+      "Lucas Systems warehouse optimization and voice-directed picking interface",
+    description:
+      "Software Engineer working on warehouse optimisation and task execution software for large distribution centres.",
+    technologies: [
+      "C",
+      "SQL",
+      "Silverlight",
+      "Warehouse Management Systems",
+      "Task Execution Software",
+      "Technical Consulting",
+    ],
+    liveLink: "",
+    githubLink: "",
+    details: {
+      video: "",
+      challenge:
+        "Improve storage efficiency and order processing for warehouse and distribution centre clients using robust, scalable software systems.",
+      solution:
+        "Contributed as a Software Engineer to the design, implementation, testing, and support of warehouse management and task execution software, building strong system foundations that could scale with evolving business requirements.",
+      features: [
+        "Participated in multiple warehouse optimisation projects to improve storage and order processing performance.",
+        "Worked with C, SQL, and Silverlight across design, implementation, and testing of core product features.",
+        "Supported and maintained warehouse management and task execution applications in production environments.",
+        "Helped build robust system foundations to support long-term scalability and reliability.",
       ],
       images: [],
     },
