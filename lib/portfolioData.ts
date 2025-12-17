@@ -114,7 +114,7 @@ export const portfolioData: PortfolioProject[] = [
     id: 3,
     slug: "mello-trello-clone",
     title: "Mello",
-    category: "Coming Soon",
+    category: "",
     image:
       "https://www.teamplate.io/wp-content/uploads/2024/12/shutterstock_2289836763-1.jpg",
     imageAlt: "Mello Trello-style project management board UI",
@@ -129,8 +129,8 @@ export const portfolioData: PortfolioProject[] = [
       "Stripe",
       "Clerk",
     ],
-    liveLink: "", // add deployed URL when ready
-    githubLink: "", // add repo URL when ready
+    liveLink: "https://mello-navy.vercel.app/",
+    githubLink: "https://github.com/MPDeSilva/Mello",
     details: {
       video: "",
       challenge:
@@ -149,6 +149,7 @@ export const portfolioData: PortfolioProject[] = [
         "/images/mello/mello-1.png",
         "/images/mello/mello-2.png",
         "/images/mello/mello-3.png",
+        "/images/mello/mello-4.png",
       ],
     },
   },
