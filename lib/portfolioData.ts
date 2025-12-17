@@ -87,7 +87,7 @@ export const portfolioData: PortfolioProject[] = [
       "TailwindCSS",
       "NextAuth",
     ],
-    liveLink: "", 
+    liveLink: "https://travel-planner-rosy.vercel.app/", 
     githubLink: "https://github.com/MPDeSilva/Travel-Planner",
     details: {
       video: "",
