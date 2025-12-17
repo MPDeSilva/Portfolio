@@ -87,8 +87,8 @@ export const portfolioData: PortfolioProject[] = [
       "TailwindCSS",
       "NextAuth",
     ],
-    liveLink: "", // add deployed URL when ready
-    githubLink: "", // add repo URL when ready
+    liveLink: "", 
+    githubLink: "https://github.com/MPDeSilva/Travel-Planner",
     details: {
       video: "",
       challenge:
