@@ -72,7 +72,7 @@ export const portfolioData: PortfolioProject[] = [
     id: 2,
     slug: "travel-planner",
     title: "Travel Planner",
-    category: "Coming Soon",
+    category: "",
     image:
       "https://thealphabetstore.co.uk/wp-content/uploads/2023/03/TRAVEL-JOURNAL-2.jpeg",
     imageAlt: "Travel Planner app with map and trip timeline interface",
