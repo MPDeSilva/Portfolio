@@ -617,7 +617,7 @@ export const portfolioData: PortfolioProject[] = [
     title: "Image Gallery",
     category: "",
     image:
-      "https://www.islands.com/img/gallery/a-bustling-yet-underrated-connecticut-city-is-home-to-americas-oldest-public-art-museum/l-intro-1733933490.jpg",
+      "/images/image-gallery/image-gallery.jpg",
     imageAlt: "Thornacre Albums responsive image gallery grid UI",
     description:
       "Interview task image gallery that consumes a remote albums API and presents a responsive, searchable grid with loaders, error handling, and accessibility baked in.",
