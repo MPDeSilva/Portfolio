@@ -13,16 +13,13 @@ export async function POST(request: NextRequest) {
   try {
     const { firstName, lastName, email, company, message }: ContactFormData = await request.json();
 
-    // Create a test account if you don't have email credentials yet
-    // In production, use your actual email service credentials
     const transporter = nodemailer.createTransport({
-      // For Gmail
       service: 'gmail',
       auth: {
         user: process.env.EMAIL_USER || 'your.email@gmail.com',
         pass: process.env.EMAIL_PASS || 'your-app-password',
       },
-      // Alternative: For other email services
+      // Alt for other email services
       // host: process.env.EMAIL_HOST,
       // port: process.env.EMAIL_PORT,
       // secure: true,
@@ -32,7 +29,6 @@ export async function POST(request: NextRequest) {
       // },
     });
 
-    // Email to yourself
     const mailOptions = {
       from: `${firstName} ${lastName} <${email}>`,
       to: process.env.EMAIL_TO || 'your.email@example.com',

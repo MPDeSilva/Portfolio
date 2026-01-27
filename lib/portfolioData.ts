@@ -3,7 +3,7 @@ interface ProjectDetails {
   solution: string;
   features: string[];
   images: string[];
-  video?: string; // Optional YouTube URL
+  video?: string;
 }
 
 export interface PortfolioProject {
@@ -44,10 +44,10 @@ export const portfolioData: PortfolioProject[] = [
       "Mapbox",
       "Google Maps API",
     ],
-    liveLink: "", // add deployed URL or staging link
-    githubLink: "", // add repo URL if/when public
+    liveLink: "",
+    githubLink: "",
     details: {
-      video: "", // optional demo link when ready
+      video: "",
       challenge:
         "Replace ad-hoc spreadsheets and disconnected tools used by NHS teams to track vulnerable elderly patients, where incomplete data and poor assignment visibility can cause delays in care.",
       solution:
@@ -538,7 +538,7 @@ export const portfolioData: PortfolioProject[] = [
       "TailwindCSS",
     ],
     liveLink: "https://ember.co/",
-    githubLink: "", // Add your repo link if applicable
+    githubLink: "",
     details: {
       challenge:
         "Deliver a fully responsive website and application with advanced accounting features, high accessibility, and seamless content management.",
@@ -622,7 +622,7 @@ export const portfolioData: PortfolioProject[] = [
     description:
       "Interview task image gallery that consumes a remote albums API and presents a responsive, searchable grid with loaders, error handling, and accessibility baked in.",
     technologies: ["React", "TypeScript", "TailwindCSS", "React Query", "Vite"],
-    liveLink: "", // add deployed URL if you host it
+    liveLink: "",
     githubLink: "https://github.com/MPDeSilva/Thornacre-Task",
     details: {
       challenge:
@@ -665,7 +665,7 @@ export const portfolioData: PortfolioProject[] = [
       "HTML",
       "CSS",
     ],
-    liveLink: "", // add deployed URL if you host it
+    liveLink: "",
     githubLink: "https://github.com/MPDeSilva/BigLight-Task2-React",
     details: {
       challenge:
@@ -699,7 +699,7 @@ export const portfolioData: PortfolioProject[] = [
     description:
       "Foundational Node.js and Express web server demonstrating routing, middleware, and basic HTTP handling.",
     technologies: ["Node.js", "Express", "JavaScript"],
-    liveLink: "", // if hosted
+    liveLink: "",
     githubLink: "https://github.com/MPDeSilva/BasicNodeExpressWebServer",
     details: {
       challenge:
@@ -726,7 +726,7 @@ export const portfolioData: PortfolioProject[] = [
     description:
       "Tutorial-based Node.js, Express, and MongoDB project implementing asynchronous CRUD operations against a database.",
     technologies: ["Node.js", "Express", "MongoDB", "Mongoose", "JavaScript"],
-    liveLink: "", // if hosted
+    liveLink: "",
     githubLink: "https://github.com/MPDeSilva/MongoAsyncCRUD",
     details: {
       challenge:
@@ -753,7 +753,7 @@ export const portfolioData: PortfolioProject[] = [
     description:
       "A simple blog application built with React to practice component-based UI, routing, and state management.",
     technologies: ["React", "JavaScript", "HTML", "CSS"],
-    liveLink: "", // if hosted
+    liveLink: "",
     githubLink: "https://github.com/MPDeSilva/ReactBlog",
     details: {
       challenge:
@@ -994,7 +994,7 @@ export const portfolioData: PortfolioProject[] = [
     description:
       "Timed interview challenge recreating an Ember marketing page in React, focusing on layout, branding, and speed under time pressure.",
     technologies: ["React", "JavaScript", "CSS", "Node.js"],
-    liveLink: "", // add if you redeploy it
+    liveLink: "",
     githubLink: "https://github.com/MPDeSilva/EmberWebsite",
     details: {
       challenge:
