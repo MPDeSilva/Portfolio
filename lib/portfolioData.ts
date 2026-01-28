@@ -721,7 +721,7 @@ export const portfolioData: PortfolioProject[] = [
     title: "MongoAsyncCRUD",
     category: "",
     image:
-      "https://www.mongodb.com/docs/manual/static/4b1986c728e4ba0b47222fe837fa98e8/e0e5a/hero.webp",
+      "/images/mongo/mongodb.svg",
     imageAlt: "MongoDB CRUD operations in a Node.js app",
     description:
       "Tutorial-based Node.js, Express, and MongoDB project implementing asynchronous CRUD operations against a database.",
