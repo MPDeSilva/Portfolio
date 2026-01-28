@@ -171,6 +171,7 @@ export const portfolioData: PortfolioProject[] = [
       "TailwindCSS",
       "CSS",
       "SASS",
+      "Gulp",
       "Google Analytics",
     ],
     liveLink: "https://northerndata.de/",
