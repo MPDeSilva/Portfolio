@@ -44,7 +44,7 @@ export const portfolioData: PortfolioProject[] = [
       "Mapbox",
       "Google Maps API",
     ],
-    liveLink: "",
+    liveLink: "https://kind-kon-dr.vercel.app/login",
     githubLink: "",
     details: {
       video: "",
