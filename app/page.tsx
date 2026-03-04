@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import ProjectCard from '@/components/ProjectCard';
-import { portfolioData } from '@/lib/portfolioData';
+import { portfolioDataDesc } from '@/lib/portfolioData';
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
         >
-          {portfolioData.map((project, index) => (
+          {portfolioDataDesc.map((project, index) => (
             <ProjectCard
               key={project.id}
               project={project}

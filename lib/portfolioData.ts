@@ -22,7 +22,147 @@ export interface PortfolioProject {
 
 export const portfolioData: PortfolioProject[] = [
   {
-    id: 1,
+  id: 30,
+  slug: "klam",
+  title: "Klam",
+  category: "",
+  image: "/images/klam/klam.webp", // add a screenshot URL before publishing
+  imageAlt: "Klam video-first dating app marketing website homepage",
+  description:
+    "Marketing website for Klam, a video-first dating app built for genuine connections. Safety-focused, fully accessible (WCAG 2.2 AA), and optimised for Core Web Vitals.",
+  technologies: [
+    "Next.js 15",
+    "React 19",
+    "TypeScript",
+    "Tailwind CSS",
+    "Framer Motion",
+  ],
+  liveLink: "https://klam-dating-website.vercel.app",
+  githubLink: "",
+  details: {
+    video: "",
+    challenge:
+      "Build a high-performance, SEO-optimised marketing site for a pre-launch dating app that communicates trust and safety to potential users while meeting WCAG 2.2 AA accessibility standards.",
+    solution:
+      "Built a Next.js 15 App Router site with all marketing copy centralised in a single config file, self-hosted fonts via next/font, and server components by default — achieving strong Core Web Vitals scores, full accessibility compliance, and easy content updates without touching component code.",
+    features: [
+      "Video-first dating concept showcase with a step-by-step how-it-works flow",
+      "Feature grid highlighting safety, verified profiles, and mutual-consent video calls",
+      "WCAG 2.2 AA accessible components: keyboard-navigable FAQ accordion, skip-to-content link, and responsive mobile menu",
+      "Centralised content config for zero-code marketing copy updates",
+      "Dynamic sitemap.xml and robots.txt generation for SEO",
+      "JSON-LD structured data: Organization, MobileApplication, and FAQPage schemas",
+      "Core Web Vitals RUM instrumentation via web-vitals library",
+      "PWA manifest with full favicon and Open Graph image asset pipeline",
+    ],
+    images: [
+      "/images/klam/klam-1.png",
+      "/images/klam/klam-2.png",
+      "/images/klam/klam-3.png",
+      "/images/klam/klam-4.png",
+    ],
+  },
+},
+  {
+  id: 29,
+  slug: "amplifly",
+  title: "Amplifly",
+  category: "Coming Soon",
+  image: "/images/amplifly/amplifly.jpg",
+  imageAlt: "Amplifly influencer intelligence dashboard showing trend radar, engagement scores, and creator network map",
+  description:
+    "AI-powered influencer intelligence and trend forecasting platform for marketing agencies to score creator authenticity, track cross-platform trends, map influencer networks, and generate weekly client briefs.",
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "TailwindCSS",
+    "Node.js",
+    "PostgreSQL",
+    "Redis",
+    "Neo4j",
+    "Python",
+    "NextAuth",
+    "Prisma",
+    "Recharts",
+    "Docker",
+  ],
+  liveLink: "https://amplifly-waiting-list.vercel.app/",
+  githubLink: "",
+  details: {
+    video: "",
+    challenge:
+      "Marketing agencies waste hours manually vetting influencers, chasing trends that are already saturated, and compiling client reports from scattered data — with no reliable way to detect fake engagement or map how creators are connected.",
+    solution:
+      "Built a full-stack platform that scores influencer authenticity using engagement pattern analysis, forecasts trend lifecycles across YouTube, Reddit, and Google Trends, visualises creator networks as a force-directed graph, and generates AI-powered weekly client briefs with one click.",
+    features: [
+      "Influencer scoring engine with Engagement Quality and Authenticity Risk scores out of 100",
+      "Cross-platform trend radar classifying topics as Emerging, Rising, Saturated, or Declining",
+      "Interactive network map showing creator clusters, audience overlap, and collaboration signals",
+      "Seed and satellite creator bundle recommendations for maximum reach with minimal overlap",
+      "AI-generated weekly client briefs with executive summary, action items, and outreach angles",
+      "Data connectors for YouTube API, Reddit API, Google Trends, Pinterest API, and CSV import",
+      "Data source capability matrix documenting what each connector can and cannot access",
+      "Pluggable AI summary providers — Ollama for local free usage, GroqCloud, or OpenRouter",
+      "Encrypted API key storage, audit logging, and multi-client workspace support",
+    ],
+    images: [
+      "/images/amplifly/amplifly-1.png",
+      "/images/amplifly/amplifly-2.png",
+      "/images/amplifly/amplifly-3.png",
+      "/images/amplifly/amplifly-4.png"
+    ],
+  },
+},
+  {
+    id: 28,
+    slug: "hiddenwave",
+    title: "HiddenWave",
+    category: "Coming Soon",
+    image:
+      "/images/hiddenwave/hiddenwave.jpg",
+    imageAlt:
+      "HiddenWave music discovery dashboard showing hidden gem artists matched to your Spotify taste",
+    description:
+      "Spotify-powered music discovery platform that analyses your listening habits to surface hidden gem artists, emerging talent, and underground music the mainstream algorithm misses.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Spotify Web API",
+      "OAuth 2.0",
+      "Node.js",
+    ],
+    liveLink: "",
+    githubLink: "https://github.com/MPDeSilva/HiddenWave",
+    details: {
+      video: "",
+      challenge:
+        "Spotify's algorithm promotes popular, well-known artists while burying underground and emerging talent. Listeners who want to discover genuinely new music are stuck in recommendation loops of the same mainstream acts.",
+      solution:
+        "Built a taste-analysis engine that reads your Spotify listening data — top artists, tracks, genres, and play history — then searches for lesser-known artists in your favourite genres, scoring them by genre overlap, popularity, and follower count to surface music you'd never find on Discover Weekly.",
+      features: [
+        "Spotify OAuth login with automatic token refresh",
+        "AI-style taste profile with generated listening identity summary",
+        "Genre-based mood detection derived from your top genres",
+        "Popularity bias and listening diversity scoring",
+        "Top artists grid and top tracks list pulled from your Spotify data",
+        "Search-based artist discovery across your top 8 genres",
+        "Four discovery categories: Hidden Gems, Emerging Wave, Deep Match, Off Radar",
+        "Generated artist bios based on genre, popularity tier, and follower data",
+        "Follow artists and open in Spotify directly from the app",
+        "Share your discovery stats with friends",
+      ],
+      images: [
+        "/images/hiddenwave/hiddenwave-1.png",
+        "/images/hiddenwave/hiddenwave-2.png",
+        "/images/hiddenwave/hiddenwave-3.png",
+      ],
+    },
+  },
+  {
+    id: 27,
     slug: "kindkondr",
     title: "KindKonDr",
     category: "Coming Soon",
@@ -62,14 +202,16 @@ export const portfolioData: PortfolioProject[] = [
         "Secure authentication and access control for all roles",
       ],
       images: [
-        "/images/kindkondr/kindkondr-1.png",
-        "/images/kindkondr/kindkondr-2.png",
-        "/images/kindkondr/kindkondr-3.png",
+        "/images/kindkondr/kkd-1.png",
+        "/images/kindkondr/kkd-2.png",
+        "/images/kindkondr/kkd-3.png",
+        "/images/kindkondr/kkd-4.png",
+        "/images/kindkondr/kkd-5.png",
       ],
     },
   },
   {
-    id: 2,
+    id: 26,
     slug: "travel-planner",
     title: "Travel Planner",
     category: "",
@@ -111,7 +253,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 3,
+    id: 25,
     slug: "mello-trello-clone",
     title: "Mello",
     category: "",
@@ -154,7 +296,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 4,
+    id: 24,
     slug: "northern-data",
     title: "Northern Data",
     category: "",
@@ -209,7 +351,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 5,
+    id: 23,
     slug: "ardent-data-centers",
     title: "Ardent Data Centers",
     category: "",
@@ -262,7 +404,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 6,
+    id: 22,
     slug: "taiga-cloud",
     title: "Taiga Cloud",
     category: "",
@@ -313,7 +455,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 7,
+    id: 21,
     slug: "ada-infrastructure",
     title: "Ada Infrastructure",
     category: "",
@@ -361,7 +503,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 8,
+    id: 20,
     slug: "colt-data-centers",
     title: "Colt Data Centres",
     category: "",
@@ -397,7 +539,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 9,
+    id: 19,
     slug: "team-lewis",
     title: "Team Lewis",
     category: "",
@@ -444,7 +586,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 10,
+    id: 18,
     slug: "base-wellness",
     title: "Base Wellness",
     category: "",
@@ -480,7 +622,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 11,
+    id: 17,
     slug: "summit-learning",
     title: "Summit Learning",
     category: "",
@@ -523,7 +665,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 12,
+    id: 16,
     slug: "ember-website-app",
     title: "Ember",
     category: "",
@@ -571,7 +713,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 13,
+    id: 15,
     slug: "mili-personal-website",
     title: "Mili",
     category: "",
@@ -650,7 +792,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 15,
+    id: 13,
     slug: "biglight-react-landing",
     title: "George Retail",
     category: "",
@@ -692,7 +834,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 16,
+    id: 12,
     slug: "basic-node-express-webserver",
     title: "Basic Node + Express Web Server",
     category: "",
@@ -719,7 +861,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 17,
+    id: 11,
     slug: "mongo-async-crud",
     title: "MongoAsyncCRUD",
     category: "",
@@ -746,7 +888,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 18,
+    id: 10,
     slug: "react-blog",
     title: "React Blog",
     category: "",
@@ -777,7 +919,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 19,
+    id: 9,
     slug: "colour-pixel",
     title: "Colour Pixel",
     category: "",
@@ -808,7 +950,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 20,
+    id: 8,
     slug: "grocery-list-app",
     title: "Grocery List",
     category: "",
@@ -839,7 +981,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 21,
+    id: 7,
     slug: "simple-weather-app",
     title: "Simple Weather",
     category: "",
@@ -870,7 +1012,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 22,
+    id: 6,
     slug: "rate-my-accommodation",
     title: "Rate My Accommodation",
     category: "",
@@ -897,7 +1039,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 23,
+    id: 5,
     slug: "youtube-clone",
     title: "YouTube Homepage Clone",
     category: "",
@@ -924,7 +1066,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 24,
+    id: 4,
     slug: "asteroid-game",
     title: "Asteroid Game – Classic Atari-Inspired Game",
     category: "",
@@ -951,7 +1093,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 25,
+    id: 3,
     slug: "giki-frontend-task",
     title: "Giki Frontend Challenge",
     category: "",
@@ -987,7 +1129,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 26,
+    id: 2,
     slug: "ember-interview-landing",
     title: "Ember Website Interview Challenge",
     category: "",
@@ -1014,7 +1156,7 @@ export const portfolioData: PortfolioProject[] = [
     },
   },
   {
-    id: 27,
+    id: 1,
     slug: "lucas-systems",
     title: "Lucas Systems",
     category: "",
@@ -1051,21 +1193,35 @@ export const portfolioData: PortfolioProject[] = [
   },
 ];
 
+export const portfolioDataDesc: PortfolioProject[] = [...portfolioData].sort(
+  (a, b) => b.id - a.id
+);
+
 export const getProjectBySlug = (
   slug: string
 ): PortfolioProject | undefined => {
-  return portfolioData.find((project) => project.slug === slug);
+  return portfolioDataDesc.find((project) => project.slug === slug);
 };
 
 export const getNextProject = (currentSlug: string): PortfolioProject => {
-  const currentIndex = portfolioData.findIndex((p) => p.slug === currentSlug);
-  const nextIndex = (currentIndex + 1) % portfolioData.length;
-  return portfolioData[nextIndex];
+  const currentIndex = portfolioDataDesc.findIndex((p) => p.slug === currentSlug);
+
+  if (currentIndex === -1) {
+    return portfolioDataDesc[0];
+  }
+
+  const nextIndex = (currentIndex + 1) % portfolioDataDesc.length;
+  return portfolioDataDesc[nextIndex];
 };
 
 export const getPreviousProject = (currentSlug: string): PortfolioProject => {
-  const currentIndex = portfolioData.findIndex((p) => p.slug === currentSlug);
+  const currentIndex = portfolioDataDesc.findIndex((p) => p.slug === currentSlug);
+
+  if (currentIndex === -1) {
+    return portfolioDataDesc[portfolioDataDesc.length - 1];
+  }
+
   const prevIndex =
-    currentIndex === 0 ? portfolioData.length - 1 : currentIndex - 1;
-  return portfolioData[prevIndex];
+    currentIndex === 0 ? portfolioDataDesc.length - 1 : currentIndex - 1;
+  return portfolioDataDesc[prevIndex];
 };
