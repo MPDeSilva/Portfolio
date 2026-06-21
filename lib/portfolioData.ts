@@ -215,8 +215,7 @@ export const portfolioData: PortfolioProject[] = [
     slug: "travel-planner",
     title: "Travel Planner",
     category: "",
-    image:
-      "https://thealphabetstore.co.uk/wp-content/uploads/2023/03/TRAVEL-JOURNAL-2.jpeg",
+    image: "/images/travel-planner/travel-planner-main.webp",
     imageAlt: "Travel Planner app with map and trip timeline interface",
     description:
       "Fullstack travel planner web app where users create trips, add locations, and visualise journeys on an interactive map and 3D globe.",
