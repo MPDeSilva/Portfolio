@@ -6,16 +6,16 @@ interface ServiceOpt { value: string; price: number; }
 interface MultOpt { value: string; mult: number; subtitle: string; }
 
 const SERVICES: ServiceOpt[] = [
-  { value: 'Marketing / landing site', price: 1500 },
-  { value: 'Web app / full-stack', price: 4000 },
-  { value: 'AI tool / integration', price: 2500 },
-  { value: 'Knowledge base / docs', price: 1200 },
-  { value: 'CMS / digital presence', price: 1000 },
-  { value: 'SEO, AIO & GEO', price: 900 },
+  { value: 'Marketing / landing site', price: 400 },
+  { value: 'Web app / full-stack', price: 1500 },
+  { value: 'AI tool / integration', price: 700 },
+  { value: 'Knowledge base / docs', price: 200 },
+  { value: 'CMS / digital presence', price: 250 },
+  { value: 'SEO, AIO & GEO', price: 150 },
 ];
 
 const SIZES: MultOpt[] = [
-  { value: 'Small', mult: 0.7, subtitle: '1–3 pages / one feature' },
+  { value: 'Small', mult: 0.7, subtitle: '1-3 pages / one feature' },
   { value: 'Medium', mult: 1, subtitle: 'Multi-page / several features' },
   { value: 'Large', mult: 1.8, subtitle: 'Full product / platform' },
 ];
@@ -26,10 +26,10 @@ const TIMELINES: MultOpt[] = [
 ];
 
 const ADDONS: ServiceOpt[] = [
-  { value: 'Copywriting', price: 500 },
-  { value: 'Analytics & tracking', price: 350 },
-  { value: 'Accessibility audit', price: 450 },
-  { value: '3 months support', price: 300 },
+  { value: 'Copywriting', price: 150 },
+  { value: 'Analytics & tracking', price: 80 },
+  { value: 'Accessibility audit', price: 120 },
+  { value: '3 months support', price: 100 },
 ];
 
 function gbp(n: number) {
@@ -69,7 +69,7 @@ export default function PriceEstimator() {
       `Timeline: ${timeline}`,
       `Add-ons: ${addons.join(', ') || '(none)'}`,
       '',
-      `Estimated range: ${hasSelection ? `${gbp(result.low)} – ${gbp(result.high)}` : '(pending - no service selected)'}`,
+      `Estimated range: ${hasSelection ? `${gbp(result.low)} - ${gbp(result.high)}` : '(pending - no service selected)'}`,
       '',
       'Happy to chat - when would suit you?',
     ];
@@ -158,7 +158,7 @@ export default function PriceEstimator() {
             className="font-heading block leading-none"
             style={{ fontSize: 'clamp(2.4rem, 5vw, 3.4rem)', letterSpacing: '-.01em' }}
           >
-            {hasSelection ? `${gbp(result.low)} – ${gbp(result.high)}` : '£0'}
+            {hasSelection ? `${gbp(result.low)} - ${gbp(result.high)}` : '£0'}
           </span>
           <span
             className="font-mono uppercase text-ink-400 mt-3 block"

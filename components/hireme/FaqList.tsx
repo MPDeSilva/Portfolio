@@ -9,7 +9,7 @@ const FAQS = [
   },
   {
     q: 'How long do projects take?',
-    a: "A landing site is often 2–3 weeks; a full application can run a couple of months. I'll give you a realistic timeline up front and keep you updated with regular previews throughout.",
+    a: "A landing site is often 2-3 weeks; a full application can run a couple of months. I'll give you a realistic timeline up front and keep you updated with regular previews throughout.",
   },
   {
     q: 'Do you work with people outside London?',
