@@ -18,7 +18,7 @@ export default function WorkIndex() {
             className="font-mono uppercase text-ink-400"
             style={{ fontSize: 11, letterSpacing: '.12em' }}
           >
-            Portfolio · 2021 — 2025
+            Portfolio · 2021 - 2025
           </Reveal>
           <Reveal
             as="span"
@@ -41,7 +41,7 @@ export default function WorkIndex() {
         </Reveal>
         <Reveal delay={120} className="mt-6 max-w-[56ch]">
           <p className="text-ink-600" style={{ fontSize: 'clamp(1.05rem, 1.4vw, 1.25rem)', lineHeight: 1.6 }}>
-            A complete archive of shipped work — client projects, independent products and experiments. From marketing
+            A complete archive of shipped work - client projects, independent products and experiments. From marketing
             sites to AI tooling and full-stack platforms.
           </p>
         </Reveal>

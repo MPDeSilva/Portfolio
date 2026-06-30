@@ -46,7 +46,7 @@ export default function About() {
             About
           </h2>
           <p className="dropcap text-ink-600 mb-5" style={{ maxWidth: '56ch', fontSize: 18, lineHeight: 1.6 }}>
-            I&rsquo;m Milinda — a London-based developer building digital experiences that blend considered design with robust engineering. My work spans enterprise clients, fintech and ambitious independent products.
+            I&rsquo;m Milinda - a London-based developer building digital experiences that blend considered design with robust engineering. My work spans enterprise clients, fintech and ambitious independent products.
           </p>
           <p className="text-ink-600 mb-6" style={{ maxWidth: '56ch', fontSize: 18, lineHeight: 1.6 }}>
             Most recently at TEAM LEWIS I engineered websites and digital campaigns for clients including Northern Data, Colt Data Centres and Ada Infrastructure, and co-built a suite of internal AI tools. Now I&rsquo;m taking on select freelance projects.

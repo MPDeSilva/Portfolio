@@ -4,7 +4,7 @@ import Reveal from '@/components/Reveal';
 
 const STEPS = [
   { n: '01', title: 'Discover', body: 'Get aligned on goals, constraints and audience. Define what success looks like.' },
-  { n: '02', title: 'Design', body: 'Wireframes through to hi-fi — interface, type, motion and tokens.' },
+  { n: '02', title: 'Design', body: 'Wireframes through to hi-fi - interface, type, motion and tokens.' },
   { n: '03', title: 'Build', body: 'Ship iteratively in Next.js / React with tests, telemetry and accessibility baked in.' },
   { n: '04', title: 'Launch', body: 'Deploy on Vercel, measure with analytics and Lighthouse, then iterate.' },
 ];

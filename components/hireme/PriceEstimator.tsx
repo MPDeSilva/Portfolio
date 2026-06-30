@@ -69,9 +69,9 @@ export default function PriceEstimator() {
       `Timeline: ${timeline}`,
       `Add-ons: ${addons.join(', ') || '(none)'}`,
       '',
-      `Estimated range: ${hasSelection ? `${gbp(result.low)} – ${gbp(result.high)}` : '(pending — no service selected)'}`,
+      `Estimated range: ${hasSelection ? `${gbp(result.low)} – ${gbp(result.high)}` : '(pending - no service selected)'}`,
       '',
-      'Happy to chat — when would suit you?',
+      'Happy to chat - when would suit you?',
     ];
     return encodeURIComponent(lines.join('\n'));
   }, [services, size, timeline, addons, result, hasSelection]);
@@ -181,8 +181,8 @@ export default function PriceEstimator() {
               })}
               {hasSelection && (
                 <>
-                  <Line label={`Size — ${size}`} value={`× ${result.sizeMult}`} />
-                  <Line label={`Timeline — ${timeline}`} value={`× ${result.timeMult}`} />
+                  <Line label={`Size - ${size}`} value={`× ${result.sizeMult}`} />
+                  <Line label={`Timeline - ${timeline}`} value={`× ${result.timeMult}`} />
                 </>
               )}
               {addons.map((v) => {
@@ -201,7 +201,7 @@ export default function PriceEstimator() {
           Send me this brief
         </a>
         <p className="text-xs text-ink-400 mt-4 leading-relaxed">
-          Ballpark only — final quotes depend on scope and detail. No commitment; this just gives us a shared starting point.
+          Ballpark only - final quotes depend on scope and detail. No commitment; this just gives us a shared starting point.
         </p>
       </aside>
     </div>

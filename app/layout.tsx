@@ -7,8 +7,8 @@ import { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
-  title: 'Milinda De Silva — Software & Web Developer · London',
-  description: 'Portfolio of Milinda De Silva — full-stack & web developer based in London. Fast, beautiful, dependable web products.',
+  title: 'Milinda De Silva - Software & Web Developer · London',
+  description: 'Portfolio of Milinda De Silva - full-stack & web developer based in London. Fast, beautiful, dependable web products.',
   keywords: 'web development, portfolio, software, coding, programming, London, Next.js, React, TypeScript',
   icons: {
     icon: [
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     url: 'https://milinda.dev',
-    title: 'Milinda De Silva — Software & Web Developer · London',
-    description: 'Portfolio of Milinda De Silva — full-stack & web developer based in London.',
+    title: 'Milinda De Silva - Software & Web Developer · London',
+    description: 'Portfolio of Milinda De Silva - full-stack & web developer based in London.',
   },
 }
 
