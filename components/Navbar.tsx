@@ -7,10 +7,10 @@ import { useState, useEffect } from 'react';
 interface NavItem { name: string; href: string; }
 
 const NAV_ITEMS: NavItem[] = [
-  { name: 'Work', href: '/#work' },
-  { name: 'Skills', href: '/#skills' },
+  { name: 'Work', href: '/work' },
   { name: 'Services', href: '/#services' },
-  { name: 'About', href: '/#about' },
+  { name: 'About', href: '/about' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export default function Navbar() {

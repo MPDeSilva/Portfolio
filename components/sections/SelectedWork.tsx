@@ -90,6 +90,16 @@ export default function SelectedWork() {
           </Reveal>
         ))}
       </div>
+
+      <Reveal className="mt-14 flex justify-center">
+        <Link
+          href="/work"
+          className="font-mono uppercase border-b border-ink-900 hover:border-accent-500 hover:text-accent-500 transition-colors pb-1"
+          style={{ fontSize: 12, letterSpacing: '.08em' }}
+        >
+          View all work →
+        </Link>
+      </Reveal>
     </section>
   );
 }
