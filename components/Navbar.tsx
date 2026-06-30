@@ -10,7 +10,6 @@ const NAV_ITEMS: NavItem[] = [
   { name: 'Work', href: '/work' },
   { name: 'Services', href: '/hire-me' },
   { name: 'About', href: '/about' },
-  { name: 'Contact', href: '/contact' },
 ];
 
 export default function Navbar() {
