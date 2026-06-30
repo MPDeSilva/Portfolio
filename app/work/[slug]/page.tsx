@@ -57,7 +57,7 @@ export default function ProjectPage() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-center md:max-w-6xl mx-auto px-[6vw] md:px-[4vw]"
+              className="text-center wrap pt-12"
             >
               <h1 className="text-3xl md:text-5xl font-light mb-6">
                 {project.title}
@@ -69,7 +69,7 @@ export default function ProjectPage() {
           </>
         </div>
       )}
-      <div className="md:py-[3vw] md:px-[4vw] px-[6vw] py-[6vw]">
+      <div className="wrap section-pad">
         <motion.section
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -93,7 +93,7 @@ export default function ProjectPage() {
           )}
 
           {/* Project Details Section */}
-          <div className="max-w-8xl mx-auto mb-20">
+          <div className="mb-20">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               {/* Main Content */}
               <motion.div

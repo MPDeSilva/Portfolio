@@ -3,12 +3,12 @@
 import Reveal from '@/components/Reveal';
 
 const SERVICES = [
-  { n: '01', title: 'Web & app development', body: 'Production-ready sites and applications in Next.js, React & TypeScript — fast, accessible, responsive.' },
+  { n: '01', title: 'Web & app development', body: 'Production-ready sites and applications in Next.js, React & TypeScript - fast, accessible, responsive.' },
   { n: '02', title: 'Knowledge bases & docs', body: 'Knowledge hubs, technical documentation and handover materials your team will actually use.' },
-  { n: '03', title: 'CMS & digital presence', body: 'HubSpot, WordPress & Sitecore — get your business online with a digital footprint that lasts.' },
-  { n: '04', title: 'AI tools & integration', body: 'Custom AI assistants and micro-tools — multi-model chat, generators and workflow accelerators.' },
-  { n: '05', title: 'SEO, AIO & GEO', body: 'Rank on Google and surface in AI answers — search, AI & generative-engine optimisation, with analytics.' },
-  { n: '06', title: 'Consulting & delivery', body: 'Technical consulting and Agile project delivery — turning business goals into shippable plans.' },
+  { n: '03', title: 'CMS & digital presence', body: 'HubSpot, WordPress & Sitecore - get your business online with a digital footprint that lasts.' },
+  { n: '04', title: 'AI tools & integration', body: 'Custom AI assistants and micro-tools - multi-model chat, generators and workflow accelerators.' },
+  { n: '05', title: 'SEO, AIO & GEO', body: 'Rank on Google and surface in AI answers - search, AI & generative-engine optimisation, with analytics.' },
+  { n: '06', title: 'Consulting & delivery', body: 'Technical consulting and Agile project delivery - turning business goals into shippable plans.' },
 ];
 
 export default function Services() {

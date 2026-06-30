@@ -5,11 +5,11 @@ import { useState } from 'react';
 const FAQS = [
   {
     q: 'How much will my project actually cost?',
-    a: "The estimator above gives an honest ballpark. The final figure depends on scope and detail, which we'll nail down together on a call — and I'll always give you a fixed quote before we start, so there are no surprises.",
+    a: "The estimator above gives an honest ballpark. The final figure depends on scope and detail, which we'll nail down together on a call - and I'll always give you a fixed quote before we start, so there are no surprises.",
   },
   {
     q: 'How long do projects take?',
-    a: "A landing site is often 2–3 weeks; a full application can run a couple of months. I'll give you a realistic timeline up front and keep you updated with regular previews throughout.",
+    a: "A landing site is often 2-3 weeks; a full application can run a couple of months. I'll give you a realistic timeline up front and keep you updated with regular previews throughout.",
   },
   {
     q: 'Do you work with people outside London?',
@@ -17,7 +17,7 @@ const FAQS = [
   },
   {
     q: 'What happens after launch?',
-    a: "You get clear documentation and a tidy handover. If you'd like ongoing help — maintenance, new features, SEO — I offer support packages, but you're never locked in.",
+    a: "You get clear documentation and a tidy handover. If you'd like ongoing help - maintenance, new features, SEO - I offer support packages, but you're never locked in.",
   },
 ];
 

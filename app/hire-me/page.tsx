@@ -6,32 +6,32 @@ import SkillRing from '@/components/hireme/SkillRing';
 import FaqList from '@/components/hireme/FaqList';
 
 export const metadata = {
-  title: 'Work with Milinda — Services & Estimate',
+  title: 'Work with Milinda - Services & Estimate',
   description:
     'Hire Milinda De Silva for full-stack web development, AI tools, SEO and more. Get an instant ballpark estimate.',
 };
 
 const WHY = [
-  { ic: '◐', title: 'Design and code', body: 'A rare hybrid — I translate Figma to pixel-perfect, accessible front-end myself, so nothing gets lost in translation.' },
+  { ic: '◐', title: 'Design and code', body: 'A rare hybrid - I translate Figma to pixel-perfect, accessible front-end myself, so nothing gets lost in translation.' },
   { ic: '◇', title: 'One point of contact', body: 'You work directly with me from first call to launch. Faster decisions, fewer misunderstandings, real accountability.' },
-  { ic: '↗', title: 'Built to perform', body: 'Core Web Vitals, accessibility and SEO/AIO are baked in — not bolted on. Lighthouse 90+ is the starting line.' },
+  { ic: '↗', title: 'Built to perform', body: 'Core Web Vitals, accessibility and SEO/AIO are baked in - not bolted on. Lighthouse 90+ is the starting line.' },
   { ic: '◆', title: 'Clear & reliable', body: 'Agile delivery with regular previews, honest timelines and documentation you can actually use after I\'ve gone.' },
 ];
 
 const SERVICES = [
-  { n: '01', title: 'Web & app development', body: 'Full-stack Next.js, React & TypeScript — fast, accessible, responsive.' },
+  { n: '01', title: 'Web & app development', body: 'Full-stack Next.js, React & TypeScript - fast, accessible, responsive.' },
   { n: '02', title: 'AI tools & integration', body: 'Custom assistants, agents and automations wired into your stack.' },
-  { n: '03', title: 'SEO, AIO & GEO', body: 'Rank on Google and surface in AI answers — search & generative-engine optimisation.' },
+  { n: '03', title: 'SEO, AIO & GEO', body: 'Rank on Google and surface in AI answers - search & generative-engine optimisation.' },
   { n: '04', title: 'Knowledge bases & docs', body: 'Documentation hubs and knowledge bases that scale with your team.' },
-  { n: '05', title: 'CMS & digital presence', body: 'WordPress, HubSpot & Sitecore — your digital footprint, set up right.' },
-  { n: '06', title: 'Consulting & delivery', body: 'Agile scoping, coordination and delivery — concept to completion.' },
+  { n: '05', title: 'CMS & digital presence', body: 'WordPress, HubSpot & Sitecore - your digital footprint, set up right.' },
+  { n: '06', title: 'Consulting & delivery', body: 'Agile scoping, coordination and delivery - concept to completion.' },
 ];
 
 const STEPS = [
-  { n: '01', title: 'Discover', body: 'A relaxed call about your goals, scope and budget — no jargon, no pressure.' },
+  { n: '01', title: 'Discover', body: 'A relaxed call about your goals, scope and budget - no jargon, no pressure.' },
   { n: '02', title: 'Plan', body: 'A clear proposal, timeline and fixed quote you sign off before any code.' },
   { n: '03', title: 'Build', body: 'Iterative development with regular previews you can click and feed back on.' },
-  { n: '04', title: 'Launch', body: 'Deploy, document and hand over — with support on hand if you want it.' },
+  { n: '04', title: 'Launch', body: 'Deploy, document and hand over - with support on hand if you want it.' },
 ];
 
 function SecHead({ eyebrow, title, body }: { eyebrow: string; title: React.ReactNode; body?: string }) {
@@ -63,7 +63,7 @@ export default function HireMePage() {
               <span className="inline-block" style={{ animation: 'wave 2.4s ease-in-out infinite', transformOrigin: '70% 70%' }}>
                 👋
               </span>
-              Hi, I&rsquo;m Milinda — nice to meet you.
+              Hi, I&rsquo;m Milinda - nice to meet you.
             </Reveal>
             <Reveal
               as="h1"
@@ -74,7 +74,7 @@ export default function HireMePage() {
               Your idea deserves a developer who <em className="italic text-accent-500">actually cares.</em>
             </Reveal>
             <Reveal as="p" delay={160} className="text-ink-600 mt-6 max-w-[44ch]" style={{ fontSize: 'clamp(1.05rem, 1.6vw, 1.25rem)', lineHeight: 1.55 }}>
-              I&rsquo;m a full-stack developer who designs <em className="italic">and</em> builds — so you get one dependable person who sweats the details, communicates clearly, and ships things people love to use.
+              I&rsquo;m a full-stack developer who designs <em className="italic">and</em> builds - so you get one dependable person who sweats the details, communicates clearly, and ships things people love to use.
             </Reveal>
             <Reveal delay={240} className="mt-8 flex gap-5 items-center flex-wrap">
               <Link
@@ -122,7 +122,7 @@ export default function HireMePage() {
           <SecHead
             eyebrow="Why work with me"
             title="Big-agency quality, without the agency."
-            body="You talk to the person doing the work. No account managers, no hand-offs, no surprises — just clear communication and code that holds up."
+            body="You talk to the person doing the work. No account managers, no hand-offs, no surprises - just clear communication and code that holds up."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-7">
             {WHY.map((w, i) => (
@@ -188,7 +188,7 @@ export default function HireMePage() {
           <SecHead
             eyebrow="Instant ballpark"
             title="Build your estimate."
-            body="Pick what you need and get an honest ballpark in seconds — no email wall. We'll firm it up together on a call."
+            body="Pick what you need and get an honest ballpark in seconds - no email wall. We'll firm it up together on a call."
           />
           <PriceEstimator />
         </div>
@@ -233,10 +233,10 @@ export default function HireMePage() {
           <Reveal delay={100}>
             <blockquote className="font-heading text-ink-900" style={{ fontSize: 'clamp(1.4rem, 3vw, 2rem)', lineHeight: 1.4, fontWeight: 300 }}>
               &ldquo;I started building for the web because I love the moment something{' '}
-              <em className="italic text-accent-500">clicks</em> for the person using it. That&rsquo;s still why I do this — and why I&rsquo;ll treat your project like it&rsquo;s my own.&rdquo;
+              <em className="italic text-accent-500">clicks</em> for the person using it. That&rsquo;s still why I do this - and why I&rsquo;ll treat your project like it&rsquo;s my own.&rdquo;
             </blockquote>
             <div className="mt-5 font-mono text-ink-500" style={{ fontSize: 13 }}>
-              — Milinda De Silva, London
+              - Milinda De Silva, London
             </div>
           </Reveal>
         </div>

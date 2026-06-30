@@ -30,7 +30,7 @@ export default function Hero() {
             className="font-mono uppercase text-ink-700"
             style={{ fontSize: 10, letterSpacing: '.1em' }}
           >
-            Available for projects — 2025
+            Available for projects - 2025
           </span>
         </Reveal>
       </div>
@@ -60,7 +60,7 @@ export default function Hero() {
         <Reveal delay={480} className="max-w-[42ch]">
           <p className="text-ink-600" style={{ fontSize: 'clamp(1.05rem, 1.5vw, 1.3rem)', lineHeight: 1.55 }}>
             Full-stack developer turning ambitious ideas into{' '}
-            <span className="text-ink-900">fast, beautiful, dependable</span> web products — from marketing sites to AI tooling.
+            <span className="text-ink-900">fast, beautiful, dependable</span> web products - from marketing sites to AI tooling.
           </p>
           <div className="mt-7 flex items-center gap-6 flex-wrap">
             <Link
