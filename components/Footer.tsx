@@ -1,50 +1,36 @@
 'use client';
 
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+const SOCIALS = [
+  { name: 'GitHub', href: 'https://github.com/MPDeSilva' },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/milinda-de-silva/' },
+  { name: 'Email', href: 'mailto:milindapds@hotmail.com' },
+];
 
-interface SocialLink {
-  name: string;
-  href: string;
-}
-
-const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
-
-  const socialLinks: SocialLink[] = [
-    { name: 'GitHub', href: 'https://github.com/MPDeSilva' },
-    { name: 'Work GitHub', href: 'https://github.com/MiliDS-Lewis' },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/milinda-de-silva/' },
-    { name: 'Email', href: 'mailto:milindapds@hotmail.com' },
-  ];
-
+export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100 mt-auto">
-      <div className="max-w-8xl mx-auto px-[4vw] py-12">
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="text-sm text-gray-600">
-            © {currentYear} Milinda Prasan De Silva. All rights reserved.
-          </div>
-          
-          <div className="flex space-x-6">
-            {socialLinks.map((link) => (
-              <motion.a
-                key={link.name}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                className="text-sm text-gray-600 hover:text-black transition-colors duration-200"
-              >
-                {link.name}
-              </motion.a>
-            ))}
-          </div>
+    <footer className="border-t border-ink-200 mt-auto">
+      <div className="wrap flex flex-wrap items-center justify-between gap-4" style={{ paddingBlock: '2.6rem' }}>
+        <span
+          className="font-mono uppercase text-ink-500"
+          style={{ fontSize: 11, letterSpacing: '.05em' }}
+        >
+          © {new Date().getFullYear()} Milinda Prasan De Silva
+        </span>
+        <div className="flex gap-6">
+          {SOCIALS.map((s) => (
+            <a
+              key={s.name}
+              href={s.href}
+              target={s.href.startsWith('http') ? '_blank' : undefined}
+              rel={s.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+              className="font-mono uppercase text-ink-500 hover:text-accent-500 transition-colors"
+              style={{ fontSize: 11, letterSpacing: '.05em' }}
+            >
+              {s.name}
+            </a>
+          ))}
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
