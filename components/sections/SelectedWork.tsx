@@ -75,7 +75,7 @@ export default function SelectedWork() {
           Selected <em className="italic text-accent-500 not-italic" style={{ fontStyle: 'italic' }}>work</em>.
         </Reveal>
         <Reveal as="span" className="font-mono uppercase text-ink-400" style={{ fontSize: 11, letterSpacing: '.12em' }}>
-          2021 - 2025 · 30+ shipped
+          2021 - 2026 · 30+ shipped
         </Reveal>
       </div>
 

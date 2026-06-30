@@ -30,7 +30,7 @@ export default function Hero() {
             className="font-mono uppercase text-ink-700"
             style={{ fontSize: 10, letterSpacing: '.1em' }}
           >
-            Available for projects - 2025
+            Available for projects - 2026
           </span>
         </Reveal>
       </div>
