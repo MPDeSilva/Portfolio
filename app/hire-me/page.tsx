@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Reveal from '@/components/Reveal';
 import PriceEstimator from '@/components/hireme/PriceEstimator';
-import SkillRing from '@/components/hireme/SkillRing';
+import HeroCollage from '@/components/hireme/HeroCollage';
 import FaqList from '@/components/hireme/FaqList';
 
 export const metadata = {
@@ -110,7 +110,7 @@ export default function HireMePage() {
             </Reveal>
           </div>
           <Reveal delay={200}>
-            <SkillRing />
+            <HeroCollage />
           </Reveal>
         </div>
         <style>{`@keyframes wave { 0%,60%,100%{transform:rotate(0)} 10%{transform:rotate(16deg)} 20%{transform:rotate(-8deg)} 30%{transform:rotate(16deg)} 40%{transform:rotate(-4deg)} 50%{transform:rotate(10deg)} }`}</style>
