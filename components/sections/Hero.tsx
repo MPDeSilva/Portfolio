@@ -8,8 +8,8 @@ export default function Hero() {
     <section
       className="wrap flex flex-col justify-center"
       style={{
-        minHeight: 'clamp(640px, 92vh, 1000px)',
-        paddingTop: 'clamp(3.5rem, 8vw, 6rem)',
+        minHeight: 'clamp(600px, 86vh, 940px)',
+        paddingBlock: 'clamp(1.4rem, 3vw, 2.6rem) clamp(2rem, 5vw, 4rem)',
       }}
     >
       {/* Top row */}

@@ -272,13 +272,13 @@ export default function HireMePage() {
               Tell me what you&rsquo;re building and I&rsquo;ll come back with a clear plan and a fair price. I read and reply to every message personally.
             </Reveal>
             <Reveal delay={220}>
-              <a
-                href="mailto:milindapds@hotmail.com"
-                className="inline-block bg-white text-accent-600 px-9 py-4 rounded-sm font-mono uppercase hover:-translate-y-0.5 transition-transform"
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-white text-accent-600 px-9 py-4 rounded-full font-mono uppercase hover:-translate-y-0.5 hover:shadow-lg transition-all"
                 style={{ fontSize: 12, letterSpacing: '.08em' }}
               >
-                milindapds@hotmail.com
-              </a>
+                Start the conversation <span aria-hidden>→</span>
+              </Link>
             </Reveal>
           </div>
         </div>

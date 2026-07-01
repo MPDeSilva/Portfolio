@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Reveal from '@/components/Reveal';
 
 export default function CTA() {
@@ -25,13 +26,13 @@ export default function CTA() {
           LET&rsquo;S <em className="italic text-accent-500">talk.</em>
         </Reveal>
         <Reveal>
-          <a
-            href="mailto:milindapds@hotmail.com"
-            className="font-mono inline-block border-b-2 border-white/50 hover:text-accent-500 hover:border-accent-500 transition-colors pb-[5px]"
-            style={{ fontSize: 'clamp(.85rem, 2vw, 1.25rem)', letterSpacing: '.06em' }}
+          <Link
+            href="/contact"
+            className="font-mono uppercase inline-flex items-center gap-2 bg-paper text-ink-900 hover:bg-accent-500 hover:text-paper hover:-translate-y-0.5 transition-all rounded-full"
+            style={{ fontSize: 12, letterSpacing: '.08em', padding: '1.05rem 2.2rem' }}
           >
-            milindapds@hotmail.com
-          </a>
+            Start the conversation <span aria-hidden>→</span>
+          </Link>
         </Reveal>
       </div>
     </section>
