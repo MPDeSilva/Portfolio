@@ -103,12 +103,13 @@ export default function HireBanner() {
           position: relative;
           display: inline-flex;
           align-items: center;
-          gap: 0.9rem;
+          gap: 0.7rem;
           white-space: nowrap;
           background: #ffffff;
           color: #000;
           font-family: 'JetBrains Mono', ui-monospace, monospace;
           font-size: clamp(12px, 1.3vw, 14px);
+          line-height: 1;
           letter-spacing: 0.06em;
           text-transform: uppercase;
           padding: var(--pad) clamp(1.5rem, 3vw, 2.2rem);
@@ -120,13 +121,24 @@ export default function HireBanner() {
                       box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
           box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
         }
-        .hire-btn :global(.arw) {
-          font-size: 1.15em;
-          transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
-        }
-        .hire-btn :global(.txt),
-        .hire-btn :global(.arw) {
+        .hire-btn :global(.txt) {
+          display: inline-flex;
+          align-items: center;
+          line-height: 1;
           transition: color 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .hire-btn :global(.arw) {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1;
+          font-size: 1.05em;
+          transform: translateY(-1px);
+          transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                      color 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .hire-btn:hover :global(.arw) {
+          transform: translateY(-1px) translateX(5px);
         }
         .hire-btn::before {
           content: '';
@@ -159,7 +171,6 @@ export default function HireBanner() {
         .hire-btn:hover::before { transform: translateX(0); }
         .hire-btn:hover :global(.txt),
         .hire-btn:hover :global(.arw) { color: #ffffff; }
-        .hire-btn:hover :global(.arw) { transform: translateX(5px); }
         .hire-btn:focus-visible {
           outline: 2px solid #0070f3;
           outline-offset: 3px;
