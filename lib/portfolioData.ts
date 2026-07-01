@@ -44,7 +44,7 @@ export const portfolioData: PortfolioProject[] = [
     challenge:
       "Build a high-performance, SEO-optimised marketing site for a pre-launch dating app that communicates trust and safety to potential users while meeting WCAG 2.2 AA accessibility standards.",
     solution:
-      "Built a Next.js 15 App Router site with all marketing copy centralised in a single config file, self-hosted fonts via next/font, and server components by default — achieving strong Core Web Vitals scores, full accessibility compliance, and easy content updates without touching component code.",
+      "Built a Next.js 15 App Router site with all marketing copy centralised in a single config file, self-hosted fonts via next/font, and server components by default - achieving strong Core Web Vitals scores, full accessibility compliance, and easy content updates without touching component code.",
     features: [
       "Video-first dating concept showcase with a step-by-step how-it-works flow",
       "Feature grid highlighting safety, verified profiles, and mutual-consent video calls",
@@ -92,7 +92,7 @@ export const portfolioData: PortfolioProject[] = [
   details: {
     video: "",
     challenge:
-      "Marketing agencies waste hours manually vetting influencers, chasing trends that are already saturated, and compiling client reports from scattered data — with no reliable way to detect fake engagement or map how creators are connected.",
+      "Marketing agencies waste hours manually vetting influencers, chasing trends that are already saturated, and compiling client reports from scattered data - with no reliable way to detect fake engagement or map how creators are connected.",
     solution:
       "Built a full-stack platform that scores influencer authenticity using engagement pattern analysis, forecasts trend lifecycles across YouTube, Reddit, and Google Trends, visualises creator networks as a force-directed graph, and generates AI-powered weekly client briefs with one click.",
     features: [
@@ -103,7 +103,7 @@ export const portfolioData: PortfolioProject[] = [
       "AI-generated weekly client briefs with executive summary, action items, and outreach angles",
       "Data connectors for YouTube API, Reddit API, Google Trends, Pinterest API, and CSV import",
       "Data source capability matrix documenting what each connector can and cannot access",
-      "Pluggable AI summary providers — Ollama for local free usage, GroqCloud, or OpenRouter",
+      "Pluggable AI summary providers - Ollama for local free usage, GroqCloud, or OpenRouter",
       "Encrypted API key storage, audit logging, and multi-client workspace support",
     ],
     images: [
@@ -141,7 +141,7 @@ export const portfolioData: PortfolioProject[] = [
       challenge:
         "Spotify's algorithm promotes popular, well-known artists while burying underground and emerging talent. Listeners who want to discover genuinely new music are stuck in recommendation loops of the same mainstream acts.",
       solution:
-        "Built a taste-analysis engine that reads your Spotify listening data — top artists, tracks, genres, and play history — then searches for lesser-known artists in your favourite genres, scoring them by genre overlap, popularity, and follower count to surface music you'd never find on Discover Weekly.",
+        "Built a taste-analysis engine that reads your Spotify listening data - top artists, tracks, genres, and play history - then searches for lesser-known artists in your favourite genres, scoring them by genre overlap, popularity, and follower count to surface music you'd never find on Discover Weekly.",
       features: [
         "Spotify OAuth login with automatic token refresh",
         "AI-style taste profile with generated listening identity summary",

@@ -58,7 +58,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <section className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-10 pt-20 pb-24">
+      <section className="wrap section-pad">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

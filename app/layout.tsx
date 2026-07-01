@@ -7,9 +7,9 @@ import { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
-  title: 'Mili - Software/Web Developer - Portfolio',
-  description: 'A portfolio showcasing my software and web development work',
-  keywords: 'web development, portfolio, software, coding, programming',
+  title: 'Milinda De Silva - Software & Web Developer · London',
+  description: 'Portfolio of Milinda De Silva - full-stack & web developer based in London. Fast, beautiful, dependable web products.',
+  keywords: 'web development, portfolio, software, coding, programming, London, Next.js, React, TypeScript',
   icons: {
     icon: [
       { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
@@ -19,10 +19,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'en_UK',
-    url: 'https://yourwebsite.com',
-    title: 'Mili - Software/Web Developer - Portfolio',
-    description: 'A portfolio showcasing my software and web development work',
+    locale: 'en_GB',
+    url: 'https://milinda.dev',
+    title: 'Milinda De Silva - Software & Web Developer · London',
+    description: 'Portfolio of Milinda De Silva - full-stack & web developer based in London.',
   },
 }
 
@@ -35,8 +35,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/iez0mnq.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+        />
       </head>
-      <body className="min-h-screen flex flex-col" suppressHydrationWarning={true}>
+      <body className="min-h-screen flex flex-col bg-paper text-ink-900" suppressHydrationWarning={true}>
         <Navbar />
         <main className="flex-grow">
           {children}

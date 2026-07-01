@@ -91,7 +91,7 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <section className="max-w-8xl mx-auto py-[6vw] px-[6vw] md:py-[3vw] md:px-[4vw]">
+      <section className="wrap section-pad">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
