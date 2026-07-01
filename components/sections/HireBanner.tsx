@@ -103,7 +103,7 @@ export default function HireBanner() {
           position: relative;
           display: inline-flex;
           align-items: center;
-          gap: 0.7rem;
+          gap: 1rem;
           white-space: nowrap;
           background: #ffffff;
           color: #000;
