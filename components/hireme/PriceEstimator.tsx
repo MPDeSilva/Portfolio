@@ -6,12 +6,12 @@ interface ServiceOpt { value: string; price: number; }
 interface MultOpt { value: string; mult: number; subtitle: string; }
 
 const SERVICES: ServiceOpt[] = [
-  { value: 'Marketing / landing site', price: 400 },
-  { value: 'Web app / full-stack', price: 1500 },
-  { value: 'AI tool / integration', price: 700 },
-  { value: 'Knowledge base / docs', price: 200 },
-  { value: 'CMS / digital presence', price: 250 },
-  { value: 'SEO, AIO & GEO', price: 150 },
+  { value: 'Marketing / landing site', price: 170 },
+  { value: 'Web app / full-stack', price: 1140 },
+  { value: 'AI tool / integration', price: 150 },
+  { value: 'Knowledge base / docs', price: 80 },
+  { value: 'CMS / digital presence', price: 100 },
+  { value: 'SEO, AIO & GEO', price: 60 },
 ];
 
 const SIZES: MultOpt[] = [
@@ -26,10 +26,10 @@ const TIMELINES: MultOpt[] = [
 ];
 
 const ADDONS: ServiceOpt[] = [
-  { value: 'Copywriting', price: 150 },
+  { value: 'Copywriting', price: 100 },
   { value: 'Analytics & tracking', price: 80 },
-  { value: 'Accessibility audit', price: 120 },
-  { value: '3 months support', price: 100 },
+  { value: 'Accessibility audit', price: 60 },
+  { value: '3 months support', price: 90 },
 ];
 
 function gbp(n: number) {
