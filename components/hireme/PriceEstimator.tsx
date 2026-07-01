@@ -6,12 +6,12 @@ interface ServiceOpt { value: string; price: number; }
 interface MultOpt { value: string; mult: number; subtitle: string; }
 
 const SERVICES: ServiceOpt[] = [
-  { value: 'Marketing / landing site', price: 400 },
-  { value: 'Web app / full-stack', price: 1500 },
-  { value: 'AI tool / integration', price: 700 },
-  { value: 'Knowledge base / docs', price: 200 },
-  { value: 'CMS / digital presence', price: 250 },
-  { value: 'SEO, AIO & GEO', price: 150 },
+  { value: 'Marketing / landing site', price: 170 },
+  { value: 'Web app / full-stack', price: 1140 },
+  { value: 'AI tool / integration', price: 150 },
+  { value: 'Knowledge base / docs', price: 80 },
+  { value: 'CMS / digital presence', price: 100 },
+  { value: 'SEO, AIO & GEO', price: 60 },
 ];
 
 const SIZES: MultOpt[] = [
@@ -26,10 +26,10 @@ const TIMELINES: MultOpt[] = [
 ];
 
 const ADDONS: ServiceOpt[] = [
-  { value: 'Copywriting', price: 150 },
+  { value: 'Copywriting', price: 100 },
   { value: 'Analytics & tracking', price: 80 },
-  { value: 'Accessibility audit', price: 120 },
-  { value: '3 months support', price: 100 },
+  { value: 'Accessibility audit', price: 60 },
+  { value: '3 months support', price: 90 },
 ];
 
 function gbp(n: number) {
@@ -83,15 +83,18 @@ export default function PriceEstimator() {
         {/* Q1 */}
         <Block num="01" title="What do you need?">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {SERVICES.map((s) => (
-              <Opt
-                key={s.value}
-                checked={services.includes(s.value)}
-                onChange={() => toggle(services, setServices, s.value)}
-                label={s.value}
-                sub={`from ${gbp(s.price)}`}
-              />
-            ))}
+            {SERVICES.map((s) => {
+              const smallMult = SIZES.find((x) => x.value === 'Small')?.mult ?? 0.7;
+              return (
+                <Opt
+                  key={s.value}
+                  checked={services.includes(s.value)}
+                  onChange={() => toggle(services, setServices, s.value)}
+                  label={s.value}
+                  sub={`from ${gbp(s.price * smallMult)}`}
+                />
+              );
+            })}
           </div>
         </Block>
 
@@ -175,8 +178,9 @@ export default function PriceEstimator() {
             <>
               {services.map((v) => {
                 const s = SERVICES.find((x) => x.value === v)!;
+                const smallMult = SIZES.find((x) => x.value === 'Small')?.mult ?? 0.7;
                 return (
-                  <Line key={v} label={s.value} value={`from ${gbp(s.price)}`} />
+                  <Line key={v} label={s.value} value={`from ${gbp(s.price * smallMult)}`} />
                 );
               })}
               {hasSelection && (
