@@ -83,15 +83,18 @@ export default function PriceEstimator() {
         {/* Q1 */}
         <Block num="01" title="What do you need?">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {SERVICES.map((s) => (
-              <Opt
-                key={s.value}
-                checked={services.includes(s.value)}
-                onChange={() => toggle(services, setServices, s.value)}
-                label={s.value}
-                sub={`from ${gbp(s.price)}`}
-              />
-            ))}
+            {SERVICES.map((s) => {
+              const smallMult = SIZES.find((x) => x.value === 'Small')?.mult ?? 0.7;
+              return (
+                <Opt
+                  key={s.value}
+                  checked={services.includes(s.value)}
+                  onChange={() => toggle(services, setServices, s.value)}
+                  label={s.value}
+                  sub={`from ${gbp(s.price * smallMult)}`}
+                />
+              );
+            })}
           </div>
         </Block>
 
@@ -175,8 +178,9 @@ export default function PriceEstimator() {
             <>
               {services.map((v) => {
                 const s = SERVICES.find((x) => x.value === v)!;
+                const smallMult = SIZES.find((x) => x.value === 'Small')?.mult ?? 0.7;
                 return (
-                  <Line key={v} label={s.value} value={`from ${gbp(s.price)}`} />
+                  <Line key={v} label={s.value} value={`from ${gbp(s.price * smallMult)}`} />
                 );
               })}
               {hasSelection && (
