@@ -99,53 +99,46 @@ export default function HireBanner() {
         }
 
         .hire-btn {
-          --pad: clamp(1rem, 2vw, 1.25rem);
           position: relative;
           display: inline-flex;
           align-items: center;
-          gap: 1rem;
+          gap: 0.9rem;
           white-space: nowrap;
-          background: #ffffff;
-          color: #000;
+          background: var(--paper);
+          color: var(--ink-900);
           font-family: 'JetBrains Mono', ui-monospace, monospace;
           font-size: clamp(12px, 1.3vw, 14px);
           line-height: 1;
           letter-spacing: 0.06em;
           text-transform: uppercase;
-          padding: var(--pad) clamp(1.5rem, 3vw, 2.2rem);
+          padding: clamp(1rem, 2vw, 1.25rem) clamp(1.5rem, 3vw, 2.2rem);
           border-radius: 999px;
           overflow: hidden;
           isolation: isolate;
+          box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
           transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
                       color 0.3s cubic-bezier(0.22, 1, 0.36, 1),
                       box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-          box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
         }
-        .hire-btn :global(.txt) {
-          display: inline-flex;
-          align-items: center;
+        .hire-btn :global(.txt),
+        .hire-btn :global(.arw) {
+          position: relative;
+          z-index: 2;
           line-height: 1;
           transition: color 0.3s cubic-bezier(0.22, 1, 0.36, 1);
         }
         .hire-btn :global(.arw) {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          line-height: 1;
-          font-size: 1.05em;
-          transform: translateY(-1px);
+          display: inline-block;
+          font-size: 1.15em;
           transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
                       color 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-        }
-        .hire-btn:hover :global(.arw) {
-          transform: translateY(-1px) translateX(5px);
         }
         .hire-btn::before {
           content: '';
           position: absolute;
           inset: 0;
           z-index: 1;
-          background: #0070f3;
+          background: var(--accent-500);
           transform: translateX(-101%);
           transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
         }
@@ -165,14 +158,15 @@ export default function HireBanner() {
         }
         .hire-btn:hover {
           transform: translateY(-3px);
-          color: #ffffff;
-          box-shadow: 0 18px 40px -14px color-mix(in oklab, #0070f3 70%, black);
+          color: var(--paper);
+          box-shadow: 0 18px 40px -14px color-mix(in oklab, var(--accent-500) 70%, black);
         }
         .hire-btn:hover::before { transform: translateX(0); }
         .hire-btn:hover :global(.txt),
-        .hire-btn:hover :global(.arw) { color: #ffffff; }
+        .hire-btn:hover :global(.arw) { color: var(--paper); }
+        .hire-btn:hover :global(.arw) { transform: translateX(5px); }
         .hire-btn:focus-visible {
-          outline: 2px solid #0070f3;
+          outline: 2px solid var(--accent-500);
           outline-offset: 3px;
         }
 
