@@ -1,28 +1,49 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, FormEvent, ChangeEvent } from 'react';
 import { motion } from 'framer-motion';
 
+interface FormState {
+  name: string;
+  email: string;
+  project: string;
+  budget: string;
+  message: string;
+}
+
+const initial: FormState = { name: '', email: '', project: '', budget: '', message: '' };
+
+const PROJECTS = [
+  'Marketing / landing site',
+  'Web app / full-stack',
+  'AI tool / integration',
+  'Knowledge base / docs',
+  'CMS / digital presence',
+  'SEO, AIO & GEO',
+  'Something else',
+];
+
+const BUDGETS = [
+  'Under £250',
+  '£250 - £750',
+  '£750 - £1,500',
+  '£1,500 - £3,000',
+  '£3,000+',
+  'Not sure yet',
+];
+
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    company: '',
-    message: '',
-  });
-  
+  const [formData, setFormData] = useState<FormState>(initial);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
@@ -30,21 +51,12 @@ export default function ContactPage() {
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-
       if (response.ok) {
         setSubmitStatus('success');
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          company: '',
-          message: '',
-        });
+        setFormData(initial);
       } else {
         setSubmitStatus('error');
       }
@@ -65,13 +77,21 @@ export default function ContactPage() {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto"
         >
-          <h1 className="text-4xl md:text-5xl font-light mb-8">
-            Let's work together
+          <span
+            className="font-mono uppercase text-accent-500 block mb-4"
+            style={{ fontSize: 11, letterSpacing: '.14em' }}
+          >
+            Get in touch
+          </span>
+          <h1
+            className="font-heading text-ink-900 mb-6"
+            style={{ fontSize: 'clamp(2.4rem, 5vw, 3.6rem)', letterSpacing: '-.02em', lineHeight: 1.05 }}
+          >
+            Let&rsquo;s work <em className="italic text-accent-500">together.</em>
           </h1>
-          
-          <p className="text-lg text-gray-700 leading-relaxed mb-12">
-            I'm always interested in hearing about new projects and opportunities. 
-            Whether you have a question or just want to say hi, I'll do my best to get back to you.
+          <p className="text-ink-600 mb-12 max-w-[56ch]" style={{ fontSize: 17, lineHeight: 1.6 }}>
+            Tell me about your project - even a rough sketch is fine. I read every message
+            personally and reply within one business day.
           </p>
 
           <motion.form
@@ -81,44 +101,19 @@ export default function ContactPage() {
             onSubmit={handleSubmit}
             className="space-y-8"
           >
-            {/* Name Fields */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="firstName" className="block text-sm text-gray-700 mb-2">
-                  First Name <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  required
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-200 focus:border-black focus:outline-none transition-colors duration-200"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="lastName" className="block text-sm text-gray-700 mb-2">
-                  Last Name <span className="text-red-500">*</span>
-                </label>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  required
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-200 focus:border-black focus:outline-none transition-colors duration-200"
-                />
-              </div>
-            </div>
+            <Field label="Name" required htmlFor="name">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                value={formData.name}
+                onChange={handleChange}
+                className={inputClass}
+              />
+            </Field>
 
-            {/* Email Field */}
-            <div>
-              <label htmlFor="email" className="block text-sm text-gray-700 mb-2">
-                Email <span className="text-red-500">*</span>
-              </label>
+            <Field label="Email" required htmlFor="email">
               <input
                 type="email"
                 id="email"
@@ -126,30 +121,47 @@ export default function ContactPage() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-200 focus:border-black focus:outline-none transition-colors duration-200"
+                className={inputClass}
               />
+            </Field>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <Field label="Project type" htmlFor="project">
+                <select
+                  id="project"
+                  name="project"
+                  value={formData.project}
+                  onChange={handleChange}
+                  className={inputClass}
+                >
+                  <option value="">Select one (optional)</option>
+                  {PROJECTS.map((p) => (
+                    <option key={p} value={p}>
+                      {p}
+                    </option>
+                  ))}
+                </select>
+              </Field>
+
+              <Field label="Budget" htmlFor="budget">
+                <select
+                  id="budget"
+                  name="budget"
+                  value={formData.budget}
+                  onChange={handleChange}
+                  className={inputClass}
+                >
+                  <option value="">Select one (optional)</option>
+                  {BUDGETS.map((b) => (
+                    <option key={b} value={b}>
+                      {b}
+                    </option>
+                  ))}
+                </select>
+              </Field>
             </div>
 
-            {/* Company Field */}
-            <div>
-              <label htmlFor="company" className="block text-sm text-gray-700 mb-2">
-                Company / Organization
-              </label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                value={formData.company}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-200 focus:border-black focus:outline-none transition-colors duration-200"
-              />
-            </div>
-
-            {/* Message Field */}
-            <div>
-              <label htmlFor="message" className="block text-sm text-gray-700 mb-2">
-                Message <span className="text-red-500">*</span>
-              </label>
+            <Field label="Message" required htmlFor="message">
               <textarea
                 id="message"
                 name="message"
@@ -157,99 +169,92 @@ export default function ContactPage() {
                 rows={6}
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-200 focus:border-black focus:outline-none transition-colors duration-200 resize-none"
+                className={`${inputClass} resize-none`}
               />
-            </div>
+            </Field>
 
-            {/* Submit Button */}
             <div>
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
                 whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                 whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
-                className={`px-8 py-3 bg-black text-white text-sm tracking-wide transition-all duration-200 ${
-                  isSubmitting 
-                    ? 'opacity-50 cursor-not-allowed' 
-                    : 'hover:bg-gray-800'
+                className={`font-mono uppercase bg-ink-900 text-paper hover:bg-accent-500 transition-colors ${
+                  isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
                 }`}
+                style={{ fontSize: 12, letterSpacing: '.08em', padding: '.95rem 2.2rem' }}
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? 'Sending...' : 'Send message'}
               </motion.button>
             </div>
 
-            {/* Status Messages */}
             {submitStatus === 'success' && (
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 className="p-4 bg-green-50 text-green-800 rounded-sm"
               >
-                Thank you for your message! I'll get back to you soon.
+                Thanks - your message reached me. Check your inbox for a confirmation.
               </motion.div>
             )}
-            
             {submitStatus === 'error' && (
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 className="p-4 bg-red-50 text-red-800 rounded-sm"
               >
-                Something went wrong. Please try again later or email me directly.
+                Something went wrong. Please try again or email me directly.
               </motion.div>
             )}
           </motion.form>
 
-          {/* Alternative Contact Methods */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-20 pt-12 border-t border-gray-100"
+            className="mt-20 pt-12 border-t border-ink-200"
           >
-            <h2 className="text-2xl font-light mb-6">Other Ways to Connect</h2>
-            
+            <h2 className="font-heading text-ink-900 mb-6" style={{ fontSize: '1.6rem' }}>
+              Other ways to connect
+            </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 className="text-sm text-gray-500 uppercase tracking-wider mb-2">
+                <h3
+                  className="font-mono uppercase text-ink-400 mb-2"
+                  style={{ fontSize: 10, letterSpacing: '.14em' }}
+                >
                   Email
                 </h3>
-                <a 
+                <a
                   href="mailto:milindapds@hotmail.com"
-                  className="text-gray-700 hover:text-black transition-colors duration-200"
+                  className="text-ink-700 hover:text-accent-500 transition-colors"
                 >
                   milindapds@hotmail.com
                 </a>
               </div>
-              
               <div>
-                <h3 className="text-sm text-gray-500 uppercase tracking-wider mb-2">
+                <h3
+                  className="font-mono uppercase text-ink-400 mb-2"
+                  style={{ fontSize: 10, letterSpacing: '.14em' }}
+                >
                   Social
                 </h3>
                 <div className="space-x-4">
-                  <a 
+                  <a
                     href="https://www.linkedin.com/in/milinda-de-silva/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-black transition-colors duration-200"
+                    className="text-ink-700 hover:text-accent-500 transition-colors"
                   >
                     LinkedIn
                   </a>
-                  <a 
+                  <a
                     href="https://github.com/MPDeSilva"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-black transition-colors duration-200"
+                    className="text-ink-700 hover:text-accent-500 transition-colors"
                   >
                     GitHub
-                  </a>
-                  <a 
-                    href="https://github.com/MiliDS-Lewis"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-700 hover:text-black transition-colors duration-200"
-                  >
-                    GitHub (Work)
                   </a>
                 </div>
               </div>
@@ -257,6 +262,35 @@ export default function ContactPage() {
           </motion.div>
         </motion.div>
       </section>
+    </div>
+  );
+}
+
+const inputClass =
+  'w-full px-4 py-3 border border-ink-200 bg-white focus:border-ink-900 focus:outline-none transition-colors duration-200';
+
+function Field({
+  label,
+  htmlFor,
+  required = false,
+  children,
+}: {
+  label: string;
+  htmlFor: string;
+  required?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <div>
+      <label
+        htmlFor={htmlFor}
+        className="font-mono uppercase text-ink-500 block mb-2"
+        style={{ fontSize: 11, letterSpacing: '.1em' }}
+      >
+        {label}
+        {required && <span className="text-accent-500 ml-1">*</span>}
+      </label>
+      {children}
     </div>
   );
 }
