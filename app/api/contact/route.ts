@@ -10,7 +10,13 @@ interface EnquiryPayload {
 }
 
 const FROM_NAME = 'MDS Studio';
-const FROM_EMAIL = process.env.SMTP_USER || 'no-reply@mdsstudio.london';
+// Fall back to EMAIL_* names so existing Vercel env vars keep working.
+const SMTP_USER = process.env.SMTP_USER || process.env.EMAIL_USER;
+const SMTP_PASS = process.env.SMTP_PASS || process.env.EMAIL_PASS;
+const OWNER_INBOX = process.env.OWNER_INBOX || process.env.EMAIL_TO;
+// Gmail rewrites the From to the authenticated address, so default From
+// to the SMTP user (branded display name is applied below).
+const FROM_EMAIL = process.env.EMAIL_FROM || SMTP_USER || 'no-reply@mdsstudio.london';
 
 function esc(s = ''): string {
   return String(s).replace(/[&<>"]/g, (c) =>
@@ -98,7 +104,7 @@ function notificationHtml(d: EnquiryPayload): string {
         <p style="font-size:15px;line-height:1.7;color:#6b6b70;margin:20px 0 0;">Received ${when}</p>
       </td></tr>
       <tr><td style="background:#f1f1f3;padding:22px 40px;font-size:12px;line-height:1.6;color:#9a9aa0;">
-        <span style="font-family:'JetBrains Mono',monospace;letter-spacing:.04em;">DELIVERY</span> &middot; Sent from ${esc(FROM_EMAIL)} &rarr; your inbox. Visitors never see your personal address.
+        <span style="font-family:'JetBrains Mono',monospace;letter-spacing:.04em;">DELIVERY</span> &middot; Sent from ${esc(FROM_EMAIL)} &rarr; your inbox. Reply-to is set to the visitor so hitting Reply opens a mail to them.
       </td></tr>
     </table>
    </td></tr>
@@ -114,21 +120,21 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    const ownerInbox = process.env.OWNER_INBOX;
-    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS || !ownerInbox) {
-      console.error('Mailer misconfigured: SMTP_HOST / SMTP_USER / SMTP_PASS / OWNER_INBOX required');
+    if (!SMTP_USER || !SMTP_PASS || !OWNER_INBOX) {
+      console.error('Mailer misconfigured: SMTP_USER / SMTP_PASS / OWNER_INBOX required');
       return NextResponse.json({ error: 'Mailer not configured' }, { status: 500 });
     }
 
+    // Default to Gmail SMTP when no host is provided - matches the "use my
+    // Gmail as the sender" setup. Override with SMTP_HOST/PORT for any other
+    // provider (Zoho, Fastmail, Resend, etc.).
+    const host = process.env.SMTP_HOST || 'smtp.gmail.com';
     const port = Number(process.env.SMTP_PORT) || 465;
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
+      host,
       port,
       secure: port === 465,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
+      auth: { user: SMTP_USER, pass: SMTP_PASS },
     });
 
     const from = `"${FROM_NAME}" <${FROM_EMAIL}>`;
@@ -136,7 +142,7 @@ export async function POST(request: NextRequest) {
 
     const notify = transporter.sendMail({
       from,
-      to: ownerInbox,
+      to: OWNER_INBOX,
       replyTo: `"${name}" <${email}>`,
       subject: `New enquiry - ${name}${project ? ' - ' + project : ''}`,
       html: notificationHtml(data),
@@ -146,7 +152,7 @@ export async function POST(request: NextRequest) {
     const reply = transporter.sendMail({
       from,
       to: `"${name}" <${email}>`,
-      replyTo: ownerInbox,
+      replyTo: OWNER_INBOX,
       subject: 'Thanks - your message reached MDS Studio',
       html: autoReplyHtml(data),
       text: `Hi ${(name || 'there').split(' ')[0]},\n\nThanks for reaching out - I'll personally read your message and reply within one business day.\n\n- Milinda, MDS Studio`,
